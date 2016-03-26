@@ -1,0 +1,127 @@
+vpath %.h include
+vpath %.h include/mic
+vpath %.h include/uscr
+vpath %.h include/conv
+
+vpath %.c src
+vpath %.c src/conv
+vpath %.c src/mic
+vpath %.c src/sbv
+vpath %.c src/uscr
+CC=icc
+CFLAGS = -g -fopenmp
+
+objects=sp_io.o mic_kernel_utils.o mic_usmv.o mic_rmbv_bco.o mic_rmbv_bdi.o mic_rmbv_bsc.o mic_rmbv_bsr.o mic_rmbv_coo.o \
+mic_rmbv_csc.o mic_rmbv_csr.o mic_rmbv_vbr.o mic_rmbv_dia.o link.o dense.o properties.o \
+comm_tools.o inserting.o mic_lmbv_bco.o mic_lmbv_bdi.o mic_lmbv_bsc.o mic_lmbv_bsr.o \
+mic_lmbv_coo.o mic_lmbv_csc.o mic_lmbv_csr.o mic_lmbv_vbr.o mic_lmbv_dia.o mic_usmm.o usds.o \
+uscr_coo.o uscr_csc.o uscr_csr.o uscr_bsc.o uscr_bsr.o uscr_bco.o \
+uscr_dia.o uscr_bdi.o uscr_vbr.o ins_routiner.o uscr_begin.o  \
+uscr_block_begin.o uscr_variable_block_begin.o uscr_end.o uscr_insert_entry.o \
+uscr_insert_block.o uscr_insert_row.o uscr_insert_col.o uscr_insert_clique.o \
+uscr_insert_entries.o conv_tools.o usconv_bco2bdi.o usconv_bco2bsc.o usconv_bco2bsr.o usconv_bco2coo.o \
+usconv_bdi2bco.o usconv_bsc2bco.o usconv_bsr2bco.o usconv_coo2csr.o usconv_coo2csc.o \
+usconv_coo2dia.o usconv_coo2bco.o usconv_csc2coo.o usconv_csr2bco.o usconv_csr2coo.o usconv_dia2coo.o usaxpy.o usdot.o \
+usga.o usgz.o ussc.o mmio.o
+
+lib:$(objects)
+	ar crv libspblas.a $(objects) $(mic_objects)
+
+sp_io.o:sp_io.h
+mic_kernel_utils.o:mic_kernel_utils.h
+mic_usmv.o:mic_USMV.h
+mic_rmbv_bco.o:mic_rmbv_bco.h dense.h 
+mic_rmbv_bdi.o:mic_rmbv_bdi.h dense.h 
+mic_rmbv_bsc.o:mic_rmbv_bsc.h dense.h 
+mic_rmbv_bsr.o:mic_rmbv_bsr.h dense.h 
+mic_rmbv_coo.o:mic_rmbv_coo.h link.h 
+mic_rmbv_csc.o:mic_rmbv_csc.h 
+mic_rmbv_csr.o:mic_rmbv_csr.h 
+mic_rmbv_vbr.o:mic_rmbv_vbr.h dense.h 
+mic_rmbv_dia.o:mic_rmbv_dia.h
+mic_lmbv_bco.o:mic_lmbv_bco.h dense.h 
+mic_lmbv_bdi.o:mic_lmbv_bdi.h dense.h 
+mic_lmbv_bsc.o:mic_lmbv_bsc.h dense.h 
+mic_lmbv_bsr.o:mic_lmbv_bsr.h dense.h 
+mic_lmbv_coo.o:mic_lmbv_coo.h
+mic_lmbv_csc.o:mic_lmbv_csc.h 
+mic_lmbv_csr.o:mic_lmbv_csr.h
+mic_lmbv_vbr.o:mic_lmbv_vbr.h dense.h 
+mic_lmbv_dia.o:mic_lmbv_dia.h
+
+mic_usmm.o:mic_USMM.h
+usds.o:usds.h
+
+uscr_coo.o:uscr_coo.h
+uscr_csc.o:uscr_csc.h
+uscr_csr.o:uscr_csr.h
+uscr_bsc.o:uscr_bsc.h
+uscr_bsr.o:uscr_bsr.h
+uscr_bco.o:uscr_bco.h
+uscr_dia.o:uscr_dia.h types.h comm_tools.h properties.h usds.h
+uscr_bdi.o:uscr_bdi.h
+uscr_vbr.o:uscr_vbr.h
+ins_routiner.o:INS_ROUTINER.h
+uscr_begin.o:USCR_BEGIN.h
+#iuscr_begin.o:USCR_BEGIN.h
+uscr_block_begin.o:USCR_BEGIN.h
+uscr_variable_block_begin.o:USCR_BEGIN.h
+uscr_end.o:USCR_END.h
+uscr_insert_entry.o:USCR_INSERT_ENTRY.h
+uscr_insert_block.o:USCR_INSERT_BLOCK.h USCR_INSERT_ENTRY.h
+uscr_insert_row.o:USCR_INSERT_ENTRY.h USCR_INSERT_ROW.h
+uscr_insert_col.o:USCR_INSERT_ENTRY.h USCR_INSERT_COL.h
+uscr_insert_clique.o:USCR_INSERT_ENTRY.h USCR_INSERT_CLIQUE.h
+uscr_insert_entries.o:USCR_INSERT_ENTRY.h USCR_INSERT_ENTRIES.h
+conv_tools.o:conv_tools.h blas_sparse_namedconstants.h
+
+usconv_bco2bdi.o:properties.h conv_tools.h usconv.h link.h
+usconv_bco2bsc.o:properties.h conv_tools.h usconv.h link.h
+usconv_bco2bsr.o:properties.h conv_tools.h usconv.h link.h
+usconv_bco2coo.o:properties.h conv_tools.h usconv.h link.h
+usconv_bdi2bco.o:properties.h conv_tools.h usconv.h link.h
+usconv_bsc2bco.o:properties.h conv_tools.h usconv.h link.h
+usconv_bsr2bco.o:properties.h conv_tools.h usconv.h link.h
+usconv_coo2csr.o:properties.h conv_tools.h usconv.h link.h
+usconv_coo2csc.o:properties.h conv_tools.h usconv.h link.h
+usconv_coo2dia.o:properties.h conv_tools.h usconv.h link.h
+usconv_coo2bco.o:properties.h conv_tools.h usconv.h link.h
+usconv_csc2coo.o:properties.h conv_tools.h usconv.h link.h
+usconv_csr2bco.o:properties.h conv_tools.h usconv.h link.h
+usconv_csr2coo.o:properties.h conv_tools.h usconv.h link.h
+usconv_dia2coo.o:properties.h conv_tools.h usconv.h link.h
+
+link.o:link.h
+dense.o:dense.h blas_sparse_namedconstants.h
+properties.o:properties.h
+comm_tools.o:comm_tools.h INSERTING.h properties.h types.h link.h
+inserting.o:INSERTING.h comm_tools.h
+usaxpy.o:USAXPY.h
+usdot.o:USDOT.h comm_tools.h
+usga.o:USGA.h
+usgz.o:USGA.h USGZ.h
+ussc.o:USSC.h
+mmio.o:mmio.h
+#hash.o:hash.h
+
+# test.o:USMV.h USMM.h USCR_BEGIN.h USCR_END.h USCR_INSERT_ENTRY.h USCR_INSERT_BLOCK.h usds.h comm_tools.h uscr_coo.h \
+# 	uscr_csr.h uscr_bsc.h uscr_bsr.h uscr_bco.h uscr_dia.h uscr_bdi.h uscr_vbr.h mbv.h blas_enum.h usconv.h link.h
+# 	gcc -c -o test.o mytest.c
+# gcc -shared -fPCI -o libspblas.so $(objects)
+# lib:$(objects)
+# 	ar crv libspblas.a $(objects)
+mytest:iBLAS.h 
+	icc -c -g -fopenmp -o mic_mytest.o mic_mytest.c
+	icc -g -fopenmp -o mytest $(objects) mic_mytest.o
+test:iBLAS.h 
+	icc -c -g -fopenmp -restrict -o mic_test.o mic_test.c
+	icc -g -fopenmp -restrict -o test $(objects) mic_test.o
+temp:
+	gcc -g -fopenmp -o temp_property temp_property.c libspblas.a
+feature:
+	gcc -g -fopenmp -o feature feature.c libspblas.a
+	
+
+.PHONE:clean
+clean:
+	rm mic_mytest mic_test mic_mytest.o mic_test.o $(objects) libspblas.a

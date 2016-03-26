@@ -1,0 +1,26 @@
+#include "uscr/USCR_BEGIN.h"
+d_matrix* BLAS_duscr_variable_block_begin(int Mb,int Nb,const int* k,const int* l)
+{
+  d_matrix* dpmatrix;
+  int i=0;
+  if((Mb<=0)||(Nb<=0)){// then
+      return NULL;
+    }
+  else
+    {
+      dpmatrix=new_d_matrix(Mb);
+      dpmatrix=daccess_matrix(dpmatrix);
+      if(dpmatrix==NULL) return NULL;
+      dpmatrix->DIM[3]=Mb;    //nb_of_block_rows
+      dpmatrix->DIM[4]=Nb;    //nb_of_block_cols
+      dpmatrix->sub_rows=(int*)k;
+      dpmatrix->sub_cols=(int*)l;
+      for(i=0;i<Mb;i++)
+        {
+          dpmatrix->trb[i]=0;
+          dpmatrix->tre[i]=0;
+        }
+      dpmatrix->format='v';
+    }
+  return dpmatrix;
+}

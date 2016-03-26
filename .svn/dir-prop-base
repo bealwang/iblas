@@ -1,0 +1,26 @@
+K 10
+svn:ignore
+V 378
+*.git
+.gitattributes
+.gitignore
+Makefile.Debug
+Makefile.Release
+My_Spblas.pro
+My_Spblas.pro.user
+Spblas_C.creator.user
+Spblas_C.files
+debug
+object_script.My_Spblas.Debug
+object_script.My_Spblas.Release
+release
+spblas.note
+spblas_c_bransh12_8.config
+spblas_c_bransh12_8.creator
+spblas_c_bransh12_8.creator.user
+spblas_c_bransh12_8.files
+spblas_c_bransh12_8.includes
+spblas_f
+tmp
+
+END

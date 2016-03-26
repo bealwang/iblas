@@ -1,0 +1,954 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	./include/types.h	/^    complex_d *A;$/;"	m	struct:__anon18	access:public
+A	./include/types.h	/^    complex_f *A;$/;"	m	struct:__anon17	access:public
+A	./include/types.h	/^    double *A;$/;"	m	struct:__anon15	access:public
+A	./include/types.h	/^    float *A;$/;"	m	struct:__anon16	access:public
+A	./include/types.h	/^    int *A;$/;"	m	struct:__anon14	access:public
+BCO_FORMAT	./include/blas_enum.h	/^  BCO_FORMAT,$/;"	e	enum:store_format
+BDI_FORMAT	./include/blas_enum.h	/^  BDI_FORMAT,$/;"	e	enum:store_format
+BLAS_BASE_ONE	./include/blas_enum.h	/^  BLAS_BASE_ONE=1$/;"	e	enum:blas_base_type
+BLAS_BASE_ZERO	./include/blas_enum.h	/^  BLAS_BASE_ZERO=0,$/;"	e	enum:blas_base_type
+BLAS_ENUM_H	./include/blas_enum.h	2;"	d
+BLAS_cuscr_block_begin	./include/uscr/USCR_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_cuscr_block_begin(int Mb,int Nb,int k,int l);$/;"	p	signature:(int Mb,int Nb,int k,int l)
+BLAS_cuscr_insert_entries	./include/uscr/USCR_INSERT_ENTRIES.h	/^int BLAS_cuscr_insert_entries(blas_sparse_matrix A,int nz,const complex_f* val,const int *indx,const int *jndx);$/;"	p	signature:(blas_sparse_matrix A,int nz,const complex_f* val,const int *indx,const int *jndx)
+BLAS_cuscr_variable_block_begin	./include/uscr/USCR_VARIABLE_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_cuscr_variable_block_begin(int Mb,int Nb,const int *k,const int *l);$/;"	p	signature:(int Mb,int Nb,const int *k,const int *l)
+BLAS_cussm	./include/USSM.h	/^int BLAS_cussm(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb);$/;"	p	signature:(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb)
+BLAS_cussv	./include/USSV.h	/^int BLAS_cussv(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx);$/;"	p	signature:(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx)
+BLAS_dusaxpy	./include/USAXPY.h	/^void BLAS_dusaxpy (int nz, double alpha, const double* x, const int* indx, double* y, int incy,  enum blas_base_type  index_base);$/;"	p	signature:(int nz, double alpha, const double* x, const int* indx, double* y, int incy, enum blas_base_type index_base)
+BLAS_dusaxpy	./src/usaxpy.c	/^void BLAS_dusaxpy (int nz, double alpha, const double* x, const int* indx, double* y, int incy, enum blas_base_type index_base)$/;"	f	signature:(int nz, double alpha, const double* x, const int* indx, double* y, int incy, enum blas_base_type index_base)
+BLAS_duscr_begin	./include/uscr/USCR_BEGIN.h	/^d_matrix* BLAS_duscr_begin(int m,int n);$/;"	p	signature:(int m,int n)
+BLAS_duscr_begin	./src/uscr/uscr_begin.c	/^d_matrix* BLAS_duscr_begin(int m,int n)$/;"	f	signature:(int m,int n)
+BLAS_duscr_begin	./src/uscr_begin.c	/^d_matrix* BLAS_duscr_begin(int m,int n)$/;"	f	signature:(int m,int n)
+BLAS_duscr_block_begin	./include/uscr/USCR_BEGIN.h	/^d_matrix* BLAS_duscr_block_begin(int Mb,int Nb,int k,int l);$/;"	p	signature:(int Mb,int Nb,int k,int l)
+BLAS_duscr_block_begin	./include/uscr/USCR_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_duscr_block_begin(int Mb,int Nb,int k,int l);$/;"	p	signature:(int Mb,int Nb,int k,int l)
+BLAS_duscr_insert_block	./include/uscr/USCR_INSERT_BLOCK.h	/^int BLAS_duscr_insert_block(d_matrix* A,double** val ,int row_stride,int clo_stride, int bi,int bj);$/;"	p	signature:(d_matrix* A,double** val ,int row_stride,int clo_stride, int bi,int bj)
+BLAS_duscr_insert_block	./src/uscr/uscr_insert_block.c	/^int BLAS_duscr_insert_block (d_matrix *A, double** val, int row_stride, int clo_stride, int bi, int bj)$/;"	f	signature:(d_matrix *A, double** val, int row_stride, int clo_stride, int bi, int bj)
+BLAS_duscr_insert_clique	./include/uscr/USCR_INSERT_CLIQUE.h	/^int BLAS_duscr_insert_clique(d_matrix* A,const int k,const int l,const double** val,const int row_stride,const int col_stride,const int* indx,const int* jndx);$/;"	p	signature:(d_matrix* A,const int k,const int l,const double** val,const int row_stride,const int col_stride,const int* indx,const int* jndx)
+BLAS_duscr_insert_clique	./src/uscr/uscr_insert_clique.c	/^int BLAS_duscr_insert_clique (d_matrix* A, const int k, const int l, const double** val, const int row_stride, const int col_stride, const int *indx, const int *jndx)$/;"	f	signature:(d_matrix* A, const int k, const int l, const double** val, const int row_stride, const int col_stride, const int *indx, const int *jndx)
+BLAS_duscr_insert_col	./include/uscr/USCR_INSERT_COL.h	/^int BLAS_duscr_insert_col(d_matrix* A,int j,int nz,const double* val ,const int* indx);$/;"	p	signature:(d_matrix* A,int j,int nz,const double* val ,const int* indx)
+BLAS_duscr_insert_col	./src/uscr/uscr_insert_col.c	/^int BLAS_duscr_insert_col (d_matrix* A, int j, int nz, const double* val, const int* indx)$/;"	f	signature:(d_matrix* A, int j, int nz, const double* val, const int* indx)
+BLAS_duscr_insert_entries	./include/uscr/USCR_INSERT_ENTRIES.h	/^int BLAS_duscr_insert_entries(d_matrix* A,int nz,const double* val,const int* indx,const int* jndx);$/;"	p	signature:(d_matrix* A,int nz,const double* val,const int* indx,const int* jndx)
+BLAS_duscr_insert_entries	./src/uscr/uscr_insert_entries.c	/^int BLAS_duscr_insert_entries (d_matrix *A, int nz, const double* val, const int* indx, const int* jndx)$/;"	f	signature:(d_matrix *A, int nz, const double* val, const int* indx, const int* jndx)
+BLAS_duscr_insert_entry	./include/uscr/USCR_INSERT_ENTRY.h	/^int BLAS_duscr_insert_entry(d_matrix* A,double val,int i,int j);$/;"	p	signature:(d_matrix* A,double val,int i,int j)
+BLAS_duscr_insert_entry	./src/uscr/uscr_insert_entry.c	/^int BLAS_duscr_insert_entry  (d_matrix* A,double val,int i,int j)$/;"	f	signature:(d_matrix* A,double val,int i,int j)
+BLAS_duscr_insert_entry	./src/uscr_insert_entry.c	/^int BLAS_duscr_insert_entry  (d_matrix* A,double val,int i,int j)$/;"	f	signature:(d_matrix* A,double val,int i,int j)
+BLAS_duscr_insert_row	./include/uscr/USCR_INSERT_ROW.h	/^int BLAS_duscr_insert_row(d_matrix*,int i,int nz,const double* val,const int* jndx);$/;"	p	signature:(d_matrix*,int i,int nz,const double* val,const int* jndx)
+BLAS_duscr_insert_row	./src/uscr/uscr_insert_row.c	/^int BLAS_duscr_insert_row (d_matrix* A, int i, int nz, const double *val, const int *jndx)$/;"	f	signature:(d_matrix* A, int i, int nz, const double *val, const int *jndx)
+BLAS_duscr_variable_block_begin	./include/uscr/USCR_BEGIN.h	/^d_matrix* BLAS_duscr_variable_block_begin(int Mb,int Nb,const int* k,const int* l);$/;"	p	signature:(int Mb,int Nb,const int* k,const int* l)
+BLAS_duscr_variable_block_begin	./include/uscr/USCR_VARIABLE_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_duscr_variable_block_begin(int Mb,int Nb,const int *k,const int *l);$/;"	p	signature:(int Mb,int Nb,const int *k,const int *l)
+BLAS_duscr_variable_block_begin	./src/uscr/uscr_variable_block_begin.c	/^d_matrix* BLAS_duscr_variable_block_begin(int Mb,int Nb,const int* k,const int* l)$/;"	f	signature:(int Mb,int Nb,const int* k,const int* l)
+BLAS_dusdot	./include/USDOT.h	/^double BLAS_dusdot (int nz,const double* x, const int* index, const double* y, int incy, double r, enum blas_base_type index_base);$/;"	p	signature:(int nz,const double* x, const int* index, const double* y, int incy, double r, enum blas_base_type index_base)
+BLAS_dusdot	./src/usdot.c	/^double BLAS_dusdot (int nz, const double* x, const int* index, const double* y, int incy, double r, enum blas_base_type index_base)$/;"	f	signature:(int nz, const double* x, const int* index, const double* y, int incy, double r, enum blas_base_type index_base)
+BLAS_dusga	./include/USGA.h	/^void BLAS_dusga(int nz,const double* y,int incy,double* x,const int* indx,enum blas_base_type index_base);$/;"	p	signature:(int nz,const double* y,int incy,double* x,const int* indx,enum blas_base_type index_base)
+BLAS_dusga	./src/usga.c	/^void BLAS_dusga (int nz, const double* y, int incy, double *x, const int* indx, enum blas_base_type index_base)$/;"	f	signature:(int nz, const double* y, int incy, double *x, const int* indx, enum blas_base_type index_base)
+BLAS_dusmm	./include/USMM.h	/^int BLAS_dusmm(blas_order_type order,blas_trans_type transa,int nrhs,double alpha,DSPMAT* A,const double *B,int ldb,double *C,int ldc);$/;"	p	signature:(blas_order_type order,blas_trans_type transa,int nrhs,double alpha,DSPMAT* A,const double *B,int ldb,double *C,int ldc)
+BLAS_dusmm	./src/usmm.c	/^int BLAS_dusmm (blas_order_type order, blas_trans_type transa, int nrhs, double alpha, DSPMAT* A, const double* B, int ldb, double*  C, int ldc)$/;"	f	signature:(blas_order_type order, blas_trans_type transa, int nrhs, double alpha, DSPMAT* A, const double* B, int ldb, double* C, int ldc)
+BLAS_dusmv	./include/USMV.h	/^int BLAS_dusmv(blas_trans_type transa,double alpha,dsp_linknode* A, const double* x, int incx, double* y, int incy);$/;"	p	signature:(blas_trans_type transa,double alpha,dsp_linknode* A, const double* x, int incx, double* y, int incy)
+BLAS_dusmv	./src/usmv.c	/^int BLAS_dusmv (blas_trans_type transa, double alpha, dsp_linknode *A, const double *x, int incx, double *y, int incy)$/;"	f	signature:(blas_trans_type transa, double alpha, dsp_linknode *A, const double *x, int incx, double *y, int incy)
+BLAS_dussc	./include/USSC.h	/^void BLAS_dussc(int nz,const double* x,double* y,int incy,const int* indx,enum blas_base_type index_base);$/;"	p	signature:(int nz,const double* x,double* y,int incy,const int* indx,enum blas_base_type index_base)
+BLAS_dussc	./src/ussc.c	/^void BLAS_dussc (int nz, const double* x, double* y, int incy, const int* indx,enum blas_base_type index_base)$/;"	f	signature:(int nz, const double* x, double* y, int incy, const int* indx,enum blas_base_type index_base)
+BLAS_dussm	./include/USSM.h	/^int BLAS_dussm(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb);$/;"	p	signature:(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb)
+BLAS_dussv	./include/USSV.h	/^int BLAS_dussv(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx);$/;"	p	signature:(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx)
+BLAS_iuscr_begin	./include/uscr/USCR_BEGIN.h	/^i_matrix* BLAS_iuscr_begin(int m,int n);$/;"	p	signature:(int m,int n)
+BLAS_iuscr_block_begin	./include/uscr/USCR_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_iuscr_block_begin(int Mb,int Nb,int k,int l);$/;"	p	signature:(int Mb,int Nb,int k,int l)
+BLAS_iuscr_insert_entries	./include/uscr/USCR_INSERT_ENTRIES.h	/^int BLAS_iuscr_insert_entries(blas_sparse_matrix A,int nz,const int* val,const int *indx,const int *jndx);$/;"	p	signature:(blas_sparse_matrix A,int nz,const int* val,const int *indx,const int *jndx)
+BLAS_iuscr_variable_block_begin	./include/uscr/USCR_VARIABLE_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_iuscr_variable_block_begin(int Mb,int Nb,const int *k,const int *l);$/;"	p	signature:(int Mb,int Nb,const int *k,const int *l)
+BLAS_iussm	./include/USSM.h	/^int BLAS_iussm(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb);$/;"	p	signature:(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb)
+BLAS_iussv	./include/USSV.h	/^int BLAS_iussv(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx);$/;"	p	signature:(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx)
+BLAS_suscr_block_begin	./include/uscr/USCR_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_suscr_block_begin(int Mb,int Nb,int k,int l);$/;"	p	signature:(int Mb,int Nb,int k,int l)
+BLAS_suscr_insert_entries	./include/uscr/USCR_INSERT_ENTRIES.h	/^int BLAS_suscr_insert_entries(blas_sparse_matrix A,int nz,const float* val,const int *indx,const int *jndx);$/;"	p	signature:(blas_sparse_matrix A,int nz,const float* val,const int *indx,const int *jndx)
+BLAS_suscr_variable_block_begin	./include/uscr/USCR_VARIABLE_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_suscr_variable_block_begin(int Mb,int Nb,const int *k,const int *l);$/;"	p	signature:(int Mb,int Nb,const int *k,const int *l)
+BLAS_sussm	./include/USSM.h	/^int BLAS_sussm(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb);$/;"	p	signature:(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb)
+BLAS_sussv	./include/USSV.h	/^int BLAS_sussv(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx);$/;"	p	signature:(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx)
+BLAS_uscr_end	./include/uscr/USCR_END.h	/^dsp_linknode* BLAS_uscr_end(d_matrix* A);$/;"	p	signature:(d_matrix* A)
+BLAS_uscr_end	./src/uscr/uscr_end.c	/^dsp_linknode* BLAS_uscr_end(d_matrix* A)$/;"	f	signature:(d_matrix* A)
+BLAS_usds	./include/uscr/USDS.h	/^int BLAS_usds(void* sp_l,int type);\/\/type=1,2,3,4,5$/;"	p	signature:(void* sp_l,int type)
+BLAS_usds	./src/usds.c	/^int BLAS_usds(void* sp_l,int type)$/;"	f	signature:(void* sp_l,int type)
+BLAS_usgp	./include/USGP.h	/^int BLAS_usgp(blas_sparse_matrix A,int pname);$/;"	p	signature:(blas_sparse_matrix A,int pname)
+BLAS_ussp	./include/USSP.h	/^int BLAS_ussp(blas_sparse_matrix A,int pname);$/;"	p	signature:(blas_sparse_matrix A,int pname)
+BLAS_zuscr_block_begin	./include/uscr/USCR_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_zuscr_block_begin(int Mb,int Nb,int k,int l);$/;"	p	signature:(int Mb,int Nb,int k,int l)
+BLAS_zuscr_insert_entries	./include/uscr/USCR_INSERT_ENTRIES.h	/^int BLAS_zuscr_insert_entries(blas_sparse_matrix A,int nz,const complex_d* val,const int *indx,const int *jndx);$/;"	p	signature:(blas_sparse_matrix A,int nz,const complex_d* val,const int *indx,const int *jndx)
+BLAS_zuscr_variable_block_begin	./include/uscr/USCR_VARIABLE_BLOCK_BEGIN.h	/^blas_sparse_matrix BLAS_zuscr_variable_block_begin(int Mb,int Nb,const int *k,const int *l);$/;"	p	signature:(int Mb,int Nb,const int *k,const int *l)
+BLAS_zussm	./include/USSM.h	/^int BLAS_zussm(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb);$/;"	p	signature:(enum blas_order_type order,enum blas_trans_type transt,int nrhs,SCALAR_IN alpha,blas_sparse_matrix T, ARRAY B,int ldb)
+BLAS_zussv	./include/USSV.h	/^int BLAS_zussv(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx);$/;"	p	signature:(enum blas_trans_type transt,SCALAR_IN alpha,blas_sparse_matrix T,ARRAY x,int incx)
+BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+BP1	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+BP2	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+BSC_FORMAT	./include/blas_enum.h	/^  BSC_FORMAT,$/;"	e	enum:store_format
+BSR_FORMAT	./include/blas_enum.h	/^  BSR_FORMAT,$/;"	e	enum:store_format
+BlAS_dusgz	./include/USGZ.h	/^void BlAS_dusgz(int nz,double* y,int incy,double* x,const int* indx,enum blas_base_type index_base);$/;"	p	signature:(int nz,double* y,int incy,double* x,const int* indx,enum blas_base_type index_base)
+BlAS_dusgz	./src/usgz.c	/^void BlAS_dusgz (int nz, double* y, int incy, double* x, const int* indx,enum blas_base_type index_base)$/;"	f	signature:(int nz, double* y, int incy, double* x, const int* indx,enum blas_base_type index_base)
+CHK_DIR_EXISTS	./Makefile	/^CHK_DIR_EXISTS= test -d$/;"	m
+COMM_TOOLS_H	./include/comm_tools.h	2;"	d
+CONV_TOOLS_H	./include/conv/conv_tools.h	2;"	d
+COO_FORMAT	./include/blas_enum.h	/^  COO_FORMAT,$/;"	e	enum:store_format
+COPY	./Makefile	/^COPY          = cp$/;"	m
+COPY_DIR	./Makefile	/^COPY_DIR      = cp -r$/;"	m
+COPY_FILE	./Makefile	/^COPY_FILE     = $(COPY)$/;"	m
+COP_OF_SOURCE	./include/properties.h	35;"	d
+CSC_FORMAT	./include/blas_enum.h	/^  CSC_FORMAT,$/;"	e	enum:store_format
+CSPMAT	./include/types.h	/^}CSPMAT;$/;"	t	typeref:struct:__anon17
+CSP_MATRIX	./include/properties.h	27;"	d
+CSR_FORMAT	./include/blas_enum.h	/^  CSR_FORMAT,$/;"	e	enum:store_format
+C_BASE	./include/properties.h	31;"	d
+DEL_DIR	./Makefile	/^DEL_DIR       = rmdir$/;"	m
+DEL_FILE	./Makefile	/^DEL_FILE      = rm$/;"	m
+DENSE_H	./include/dense.h	2;"	d
+DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon14	access:public
+DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon15	access:public
+DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon16	access:public
+DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon17	access:public
+DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon18	access:public
+DIA_FORMAT	./include/blas_enum.h	/^  DIA_FORMAT,$/;"	e	enum:store_format
+DIM	./include/INSERTING.h	/^  int DIM[6];$/;"	m	struct:dmatrix	access:public
+DIM	./include/INSERTING.h	/^  int DIM[6];$/;"	m	struct:imatrix	access:public
+DSPMAT	./include/types.h	/^}DSPMAT;$/;"	t	typeref:struct:__anon15
+DSP_MATRIX	./include/properties.h	25;"	d
+FALSE	./constants.h	6;"	d
+FALSE	./include/blas_sparse_namedconstants.h	13;"	d
+FIDA	./include/types.h	/^    blas_store_format FIDA ;$/;"	m	struct:__anon16	access:public
+FIDA	./include/types.h	/^    blas_store_format FIDA ;$/;"	m	struct:__anon17	access:public
+FIDA	./include/types.h	/^    blas_store_format FIDA ;$/;"	m	struct:__anon18	access:public
+FIDA	./include/types.h	/^    blas_store_format FIDA;$/;"	m	struct:__anon15	access:public
+FIDA	./include/types.h	/^   blas_store_format FIDA ;$/;"	m	struct:__anon14	access:public
+F_BASE	./include/properties.h	32;"	d
+HASH_H	./include/hash.h	2;"	d
+HASH_H	./src/hash.c	2;"	d	file:
+HERMIT_MATRIX	./include/properties.h	38;"	d
+IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+IA1	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+IA2	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+IN	./constants.h	1;"	d
+INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon14	access:public
+INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon15	access:public
+INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon16	access:public
+INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon17	access:public
+INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon18	access:public
+INOUT	./constants.h	3;"	d
+INSERTING_H	./include/INSERTING.h	2;"	d
+INSTALL_DIR	./Makefile	/^INSTALL_DIR   = $(COPY_DIR)$/;"	m
+INSTALL_FILE	./Makefile	/^INSTALL_FILE  = $(COPY_FILE)$/;"	m
+INSTALL_PROGRAM	./Makefile	/^INSTALL_PROGRAM = $(COPY_FILE)$/;"	m
+INS_ROUTINER_H	./include/INS_ROUTINER.h	2;"	d
+ISPMAT	./include/types.h	/^}ISPMAT;$/;"	t	typeref:struct:__anon14
+ISP_MATRIX	./include/properties.h	24;"	d
+K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon14	access:public
+K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon15	access:public
+K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon16	access:public
+K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon17	access:public
+K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon18	access:public
+LMBV_BCO_H	./include/mbv/lmbv_bco.h	2;"	d
+LMBV_BDI_H	./include/mbv/lmbv_bdi.h	2;"	d
+LMBV_BSC_H	./include/mbv/lmbv_bsc.h	2;"	d
+LMBV_BSR_H	./include/mbv/lmbv_bsr.h	2;"	d
+LMBV_COO_H	./include/mbv/lmbv_coo.h	2;"	d
+LMBV_CSC_H	./include/mbv/lmbv_csc.h	2;"	d
+LMBV_CSR_H	./include/mbv/lmbv_csr.h	2;"	d
+LMBV_DIA_H	./include/mbv/lmbv_dia.h	2;"	d
+LMBV_VBR_H	./include/mbv/lmbv_vbr.h	2;"	d
+M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon14	access:public
+M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon15	access:public
+M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon16	access:public
+M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon17	access:public
+M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon18	access:public
+MAKEFILE	./Makefile	/^MAKEFILE      = Makefile$/;"	m
+MBV_H	./include/mbv/mbv.h	2;"	d
+MKDIR	./Makefile	/^MKDIR         = mkdir -p$/;"	m
+MOVE	./Makefile	/^MOVE          = mv$/;"	m
+NULL_FORMAT	./include/blas_enum.h	/^  NULL_FORMAT$/;"	e	enum:store_format
+ORIGIN_MATRIX	./include/blas_enum.h	/^  ORIGIN_MATRIX,$/;"	e	enum:trans_type
+OUT	./constants.h	2;"	d
+PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+PB	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+PE	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+PNTR	./include/conv/conv_tools.h	/^void PNTR(int* PNTRB,int* PNTRE,int M_K,int* INDX,int n_INDX);$/;"	p	signature:(int* PNTRB,int* PNTRE,int M_K,int* INDX,int n_INDX)
+PNTR	./src/conv/conv_tools.c	/^void PNTR(int* PNTRB,int* PNTRE,int M_K,int* INDX,int n_INDX)$/;"	f	signature:(int* PNTRB,int* PNTRE,int M_K,int* INDX,int n_INDX)
+PNTR_INV	./include/conv/conv_tools.h	/^void PNTR_INV(int* PNTRE,int n_PNTRE,int* INDX);$/;"	p	signature:(int* PNTRE,int n_PNTRE,int* INDX)
+PNTR_INV	./src/conv/conv_tools.c	/^void PNTR_INV(int* PNTRE,int n_PNTRE,int* INDX)$/;"	f	signature:(int* PNTRE,int n_PNTRE,int* INDX)
+PROPERTIES_H	./include/properties.h	2;"	d
+QMAKE	./Makefile	/^QMAKE         = e:\/qtsdk\/desktop\/qt\/4.8.0\/mingw\/bin\/qmake.exe$/;"	m
+REF_OF_SOURCE	./include/properties.h	34;"	d
+RMBV_BCO_H	./include/mbv/rmbv_bco.h	2;"	d
+RMBV_BDI_H	./include/mbv/rmbv_bdi.h	2;"	d
+RMBV_BSC_H	./include/mbv/rmbv_bsc.h	2;"	d
+RMBV_BSR_H	./include/mbv/rmbv_bsr.h	2;"	d
+RMBV_COO_H	./include/mbv/rmbv_coo.h	2;"	d
+RMBV_CSC_H	./include/mbv/rmbv_csc.h	2;"	d
+RMBV_CSR_H	./include/mbv/rmbv_csr.h	2;"	d
+RMBV_DIA_H	./include/mbv/rmbv_dia.h	2;"	d
+RMBV_VBR_H	./include/mbv/rmbv_vbr.h	2;"	d
+SSPMAT	./include/types.h	/^}SSPMAT;$/;"	t	typeref:struct:__anon16
+SSP_MATRIX	./include/properties.h	26;"	d
+SUBTARGETS	./Makefile	/^SUBTARGETS    =  \\$/;"	m
+SYMLINK	./Makefile	/^SYMLINK       = $/;"	m
+TRANSP_MATRIX	./include/blas_enum.h	/^  TRANSP_MATRIX$/;"	e	enum:trans_type
+TRUE	./constants.h	5;"	d
+TRUE	./include/blas_sparse_namedconstants.h	12;"	d
+USAXPY_H	./include/USAXPY.h	2;"	d
+USCONV_H	./include/conv/usconv.h	2;"	d
+USCR_BCO_H	./include/uscr/uscr_bco.h	2;"	d
+USCR_BDI_H	./include/uscr/uscr_bdi.h	2;"	d
+USCR_BEGIN_H	./include/uscr/USCR_BEGIN.h	2;"	d
+USCR_BLOCK_BEGIN_H	./include/uscr/USCR_BLOCK_BEGIN.h	2;"	d
+USCR_BSC_H	./include/uscr/uscr_bsc.h	2;"	d
+USCR_BSR_H	./include/uscr/uscr_bsr.h	2;"	d
+USCR_CSC_H	./include/uscr/uscr_csc.h	2;"	d
+USCR_CSR_H	./include/uscr/uscr_csr.h	2;"	d
+USCR_DIA_H	./include/uscr/uscr_dia.h	2;"	d
+USCR_END_H	./include/uscr/USCR_END.h	2;"	d
+USCR_INSERT_BLOCK_H	./include/uscr/USCR_INSERT_BLOCK.h	2;"	d
+USCR_INSERT_CLIQUE_H	./include/uscr/USCR_INSERT_CLIQUE.h	2;"	d
+USCR_INSERT_COL_H	./include/uscr/USCR_INSERT_COL.h	2;"	d
+USCR_INSERT_ENTRIES_H	./include/uscr/USCR_INSERT_ENTRIES.h	2;"	d
+USCR_INSERT_ENTRY_H	./include/uscr/USCR_INSERT_ENTRY.h	2;"	d
+USCR_INSERT_ROW_H	./include/uscr/USCR_INSERT_ROW.h	2;"	d
+USCR_VARIABLE_BLOCK_BEGIN_H	./include/uscr/USCR_VARIABLE_BLOCK_BEGIN.h	2;"	d
+USCR_VBR_H	./include/uscr/uscr_vbr.h	2;"	d
+USCR_VBR_H	./src/uscr_vbr.h	2;"	d
+USDOT_H	./include/USDOT.h	2;"	d
+USDS_H	./include/uscr/USDS.h	2;"	d
+USGA_H	./include/USGA.h	2;"	d
+USGP_H	./include/USGP.h	2;"	d
+USGZ_H	./include/USGZ.h	2;"	d
+USMM_H	./include/USMM.h	2;"	d
+USMV_H	./include/USMV.h	2;"	d
+USSC_H	./include/USSC.h	2;"	d
+USSM_H	./include/USSM.h	2;"	d
+USSM_H	./include/USSV.h	2;"	d
+USSP_H	./include/USSP.h	2;"	d
+VBR_FORMAT	./include/blas_enum.h	/^  VBR_FORMAT,$/;"	e	enum:store_format
+ZSPMAT	./include/types.h	/^}ZSPMAT;$/;"	t	typeref:struct:__anon18
+ZSP_MATRIX	./include/properties.h	28;"	d
+__anon10::col_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon10	access:public
+__anon10::row_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon10	access:public
+__anon10::value	./include/INSERTING.h	/^  double** value;$/;"	m	struct:__anon10	access:public
+__anon11::blin	./include/INSERTING.h	/^  d_inblock blin;$/;"	m	struct:__anon11	access:public
+__anon11::pntin	./include/INSERTING.h	/^  d_inpnt1 pntin;$/;"	m	struct:__anon11	access:public
+__anon11::vblin	./include/INSERTING.h	/^  d_invblock vblin;$/;"	m	struct:__anon11	access:public
+__anon12::x	./include/types.h	/^    float x;$/;"	m	struct:__anon12	access:public
+__anon12::y	./include/types.h	/^    float y;$/;"	m	struct:__anon12	access:public
+__anon13::x	./include/types.h	/^    double x;$/;"	m	struct:__anon13	access:public
+__anon13::y	./include/types.h	/^    double y;$/;"	m	struct:__anon13	access:public
+__anon14::A	./include/types.h	/^    int *A;$/;"	m	struct:__anon14	access:public
+__anon14::BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+__anon14::BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+__anon14::DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon14	access:public
+__anon14::FIDA	./include/types.h	/^   blas_store_format FIDA ;$/;"	m	struct:__anon14	access:public
+__anon14::IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+__anon14::IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+__anon14::INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon14	access:public
+__anon14::K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon14	access:public
+__anon14::M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon14	access:public
+__anon14::PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+__anon14::PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon14	access:public
+__anon14::n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+__anon14::n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+__anon14::n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+__anon14::n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+__anon14::n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+__anon14::n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+__anon14::n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+__anon15::A	./include/types.h	/^    double *A;$/;"	m	struct:__anon15	access:public
+__anon15::BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+__anon15::BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+__anon15::DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon15	access:public
+__anon15::FIDA	./include/types.h	/^    blas_store_format FIDA;$/;"	m	struct:__anon15	access:public
+__anon15::IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+__anon15::IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+__anon15::INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon15	access:public
+__anon15::K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon15	access:public
+__anon15::M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon15	access:public
+__anon15::PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+__anon15::PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon15	access:public
+__anon15::n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+__anon15::n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+__anon15::n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+__anon15::n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+__anon15::n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+__anon15::n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+__anon15::n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+__anon16::A	./include/types.h	/^    float *A;$/;"	m	struct:__anon16	access:public
+__anon16::BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+__anon16::BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+__anon16::DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon16	access:public
+__anon16::FIDA	./include/types.h	/^    blas_store_format FIDA ;$/;"	m	struct:__anon16	access:public
+__anon16::IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+__anon16::IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+__anon16::INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon16	access:public
+__anon16::K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon16	access:public
+__anon16::M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon16	access:public
+__anon16::PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+__anon16::PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon16	access:public
+__anon16::n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+__anon16::n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+__anon16::n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+__anon16::n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+__anon16::n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+__anon16::n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+__anon16::n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+__anon17::A	./include/types.h	/^    complex_f *A;$/;"	m	struct:__anon17	access:public
+__anon17::BP1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+__anon17::BP2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+__anon17::DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon17	access:public
+__anon17::FIDA	./include/types.h	/^    blas_store_format FIDA ;$/;"	m	struct:__anon17	access:public
+__anon17::IA1	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+__anon17::IA2	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+__anon17::INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon17	access:public
+__anon17::K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon17	access:public
+__anon17::M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon17	access:public
+__anon17::PB	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+__anon17::PE	./include/types.h	/^    int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon17	access:public
+__anon17::n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+__anon17::n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+__anon17::n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+__anon17::n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+__anon17::n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+__anon17::n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+__anon17::n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+__anon18::A	./include/types.h	/^    complex_d *A;$/;"	m	struct:__anon18	access:public
+__anon18::BP1	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+__anon18::BP2	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+__anon18::DESCRA	./include/types.h	/^    char DESCRA[11];$/;"	m	struct:__anon18	access:public
+__anon18::FIDA	./include/types.h	/^    blas_store_format FIDA ;$/;"	m	struct:__anon18	access:public
+__anon18::IA1	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+__anon18::IA2	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+__anon18::INFOA	./include/types.h	/^    int INFOA[10];$/;"	m	struct:__anon18	access:public
+__anon18::K	./include/types.h	/^    int M,K;$/;"	m	struct:__anon18	access:public
+__anon18::M	./include/types.h	/^    int M,K;$/;"	m	struct:__anon18	access:public
+__anon18::PB	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+__anon18::PE	./include/types.h	/^   int *IA1,*IA2,*PB,*PE,*BP1,*BP2;$/;"	m	struct:__anon18	access:public
+__anon18::n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+__anon18::n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+__anon18::n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+__anon18::n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+__anon18::n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+__anon18::n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+__anon18::n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+__anon2::jndx	./include/hash.h	/^  int jndx,val_pos;$/;"	m	struct:__anon2	access:public
+__anon2::pntr	./include/hash.h	/^  capsule* pntr;$/;"	m	struct:__anon2	access:public
+__anon2::val_pos	./include/hash.h	/^  int jndx,val_pos;$/;"	m	struct:__anon2	access:public
+__anon3::pntr	./include/hash.h	/^  capsule* pntr;$/;"	m	struct:__anon3	access:public
+__anon4::col_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon4	access:public
+__anon4::row_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon4	access:public
+__anon4::value	./include/INSERTING.h	/^  int value;$/;"	m	struct:__anon4	access:public
+__anon5::col_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon5	access:public
+__anon5::row_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon5	access:public
+__anon5::value	./include/INSERTING.h	/^  int** value;$/;"	m	struct:__anon5	access:public
+__anon6::col_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon6	access:public
+__anon6::row_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon6	access:public
+__anon6::value	./include/INSERTING.h	/^  int** value;$/;"	m	struct:__anon6	access:public
+__anon7::blin	./include/INSERTING.h	/^  i_inblock blin;$/;"	m	struct:__anon7	access:public
+__anon7::pntin	./include/INSERTING.h	/^  i_inpnt1 pntin;$/;"	m	struct:__anon7	access:public
+__anon7::vblin	./include/INSERTING.h	/^  i_invblock vblin;$/;"	m	struct:__anon7	access:public
+__anon8::col_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon8	access:public
+__anon8::row_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon8	access:public
+__anon8::value	./include/INSERTING.h	/^  double value;$/;"	m	struct:__anon8	access:public
+__anon9::col_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon9	access:public
+__anon9::row_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon9	access:public
+__anon9::value	./include/INSERTING.h	/^  double** value;$/;"	m	struct:__anon9	access:public
+accessdata_csp	./include/link.h	/^CSPMAT * accessdata_csp(csp_linknode* sp_l,int *ierr);$/;"	p	signature:(csp_linknode* sp_l,int *ierr)
+accessdata_csp	./src/link.c	/^CSPMAT * accessdata_csp(csp_linknode* sp_l,int *ierr)$/;"	f	signature:(csp_linknode* sp_l,int *ierr)
+accessdata_dsp	./include/link.h	/^DSPMAT * accessdata_dsp(dsp_linknode* sp_l,int *ierr);$/;"	p	signature:(dsp_linknode* sp_l,int *ierr)
+accessdata_dsp	./src/link.c	/^DSPMAT * accessdata_dsp(dsp_linknode* sp_l,int *ierr)$/;"	f	signature:(dsp_linknode* sp_l,int *ierr)
+accessdata_isp	./include/link.h	/^ISPMAT * accessdata_isp(isp_linknode* sp_l,int *ierr);$/;"	p	signature:(isp_linknode* sp_l,int *ierr)
+accessdata_isp	./src/link.c	/^ISPMAT * accessdata_isp(isp_linknode* sp_l,int *ierr)$/;"	f	signature:(isp_linknode* sp_l,int *ierr)
+accessdata_isp	./src/ussv.c	/^int accessdata_isp(blas_sparse_matrix T,ISPMAT * &dspmtx);$/;"	p	file:	signature:(blas_sparse_matrix T,ISPMAT * &dspmtx)
+accessdata_ssp	./include/link.h	/^SSPMAT * accessdata_ssp(ssp_linknode* sp_l,int *ierr);$/;"	p	signature:(ssp_linknode* sp_l,int *ierr)
+accessdata_ssp	./src/link.c	/^SSPMAT * accessdata_ssp(ssp_linknode* sp_l,int *ierr)$/;"	f	signature:(ssp_linknode* sp_l,int *ierr)
+accessdata_zsp	./include/link.h	/^ZSPMAT * accessdata_zsp(zsp_linknode* sp_l,int *ierr);$/;"	p	signature:(zsp_linknode* sp_l,int *ierr)
+accessdata_zsp	./src/link.c	/^ZSPMAT * accessdata_zsp(zsp_linknode* sp_l,int *ierr)$/;"	f	signature:(zsp_linknode* sp_l,int *ierr)
+blas_base_type	./include/blas_enum.h	/^enum blas_base_type$/;"	g
+blas_block_irregular	./include/blas_sparse_namedconstants.h	32;"	d
+blas_block_regular	./include/blas_sparse_namedconstants.h	33;"	d
+blas_col_major	./include/blas_sparse_namedconstants.h	54;"	d
+blas_complex	./include/blas_sparse_namedconstants.h	63;"	d
+blas_double_precision	./include/blas_sparse_namedconstants.h	66;"	d
+blas_error_memalloc	./include/blas_sparse_namedconstants.h	72;"	d
+blas_error_memdeloc	./include/blas_sparse_namedconstants.h	73;"	d
+blas_error_param	./include/blas_sparse_namedconstants.h	75;"	d
+blas_error_singtria	./include/blas_sparse_namedconstants.h	74;"	d
+blas_general	./include/blas_sparse_namedconstants.h	43;"	d
+blas_hermitian	./include/blas_sparse_namedconstants.h	47;"	d
+blas_integer	./include/blas_sparse_namedconstants.h	64;"	d
+blas_invalid_handle	./include/blas_sparse_namedconstants.h	59;"	d
+blas_irregular	./include/blas_sparse_namedconstants.h	30;"	d
+blas_lower	./include/blas_sparse_namedconstants.h	27;"	d
+blas_lower_hermitian	./include/blas_sparse_namedconstants.h	49;"	d
+blas_lower_symmetric	./include/blas_sparse_namedconstants.h	46;"	d
+blas_lower_triangular	./include/blas_sparse_namedconstants.h	51;"	d
+blas_new_handle	./include/blas_sparse_namedconstants.h	60;"	d
+blas_no_repeated_indices	./include/blas_sparse_namedconstants.h	22;"	d
+blas_non_unit_diag	./include/blas_sparse_namedconstants.h	18;"	d
+blas_num_cols	./include/blas_sparse_namedconstants.h	68;"	d
+blas_num_nonzeros	./include/blas_sparse_namedconstants.h	69;"	d
+blas_num_rows	./include/blas_sparse_namedconstants.h	67;"	d
+blas_one_base	./include/blas_sparse_namedconstants.h	39;"	d
+blas_open_handle	./include/blas_sparse_namedconstants.h	61;"	d
+blas_order_type	./include/blas_enum.h	/^}blas_order_type;$/;"	t	typeref:enum:order_type
+blas_real	./include/blas_sparse_namedconstants.h	62;"	d
+blas_regular	./include/blas_sparse_namedconstants.h	31;"	d
+blas_repeated_indices	./include/blas_sparse_namedconstants.h	23;"	d
+blas_row_major	./include/blas_sparse_namedconstants.h	55;"	d
+blas_single_precision	./include/blas_sparse_namedconstants.h	65;"	d
+blas_sparse_matrix	./include/blas_enum.h	/^} blas_sparse_matrix ;$/;"	t	typeref:struct:__anon1
+blas_store_format	./include/blas_enum.h	/^}blas_store_format;$/;"	t	typeref:enum:store_format
+blas_symmetric	./include/blas_sparse_namedconstants.h	44;"	d
+blas_trans_type	./include/blas_enum.h	/^}blas_trans_type;$/;"	t	typeref:enum:trans_type
+blas_unassembled	./include/blas_sparse_namedconstants.h	34;"	d
+blas_unit_diag	./include/blas_sparse_namedconstants.h	19;"	d
+blas_upper	./include/blas_sparse_namedconstants.h	26;"	d
+blas_upper_hermitian	./include/blas_sparse_namedconstants.h	48;"	d
+blas_upper_symmetric	./include/blas_sparse_namedconstants.h	45;"	d
+blas_upper_triangular	./include/blas_sparse_namedconstants.h	50;"	d
+blas_valid_handle	./include/blas_sparse_namedconstants.h	58;"	d
+blas_zero_base	./include/blas_sparse_namedconstants.h	40;"	d
+blin	./include/INSERTING.h	/^  d_inblock blin;$/;"	m	struct:__anon11	access:public
+blin	./include/INSERTING.h	/^  i_inblock blin;$/;"	m	struct:__anon7	access:public
+bool	./include/blas_sparse_namedconstants.h	14;"	d
+cA_row_col	./include/conv/conv_tools.h	/^int cA_row_col();$/;"	p	signature:()
+cAb_row_col	./include/conv/conv_tools.h	/^int cAb_row_col();$/;"	p	signature:()
+cappntr	./include/hash.h	/^}cappntr;$/;"	t	typeref:struct:__anon3
+capsule	./include/hash.h	/^}capsule;$/;"	t	typeref:struct:__anon2
+cb_up_order	./include/conv/conv_tools.h	/^void cb_up_order();$/;"	p	signature:()
+cdetect_bdiag	./include/conv/conv_tools.h	/^void cdetect_bdiag();$/;"	p	signature:()
+cdetect_diag	./include/conv/conv_tools.h	/^void cdetect_diag();$/;"	p	signature:()
+clsbv_bco	./src/sbv/lsbv_bco.c	/^      void clsbv_bco (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+clsbv_bsc	./src/sbv/lsbv_bsc.c	/^      void clsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+clsbv_bsr	./src/sbv/lsbv_bsr.c	/^      void clsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+clsbv_coo	./src/sbv/lsbv_coo.c	/^      void clsbv_coo (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+clsbv_csc	./src/sbv/lsbv_csc.c	/^      void clsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+clsbv_csr	./src/sbv/lsbv_csr.c	/^      void clsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+clsbv_vbr	./src/sbv/lsbv_vbr.c	/^      void clsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+col_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon5	access:public
+col_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon9	access:public
+col_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon4	access:public
+col_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon8	access:public
+col_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon10	access:public
+col_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon6	access:public
+complex_d	./include/types.h	/^}complex_d;$/;"	t	typeref:struct:__anon13
+complex_f	./include/types.h	/^}complex_f;$/;"	t	typeref:struct:__anon12
+contents	./include/INSERTING.h	/^  d_inelement contents;$/;"	m	struct:delement	access:public
+contents	./include/INSERTING.h	/^  i_inelement contents;$/;"	m	struct:ielement	access:public
+contents	./include/link.h	/^  CSPMAT contents;$/;"	m	struct:csp_l	access:public
+contents	./include/link.h	/^  DSPMAT contents;$/;"	m	struct:dsp_l	access:public
+contents	./include/link.h	/^  ISPMAT contents;$/;"	m	struct:isp_l	access:public
+contents	./include/link.h	/^  SSPMAT contents;$/;"	m	struct:ssp_l	access:public
+contents	./include/link.h	/^  ZSPMAT contents;$/;"	m	struct:zsp_l	access:public
+count	./include/comm_tools.h	/^int count(double* a,int n_a,int e);$/;"	p	signature:(double* a,int n_a,int e)
+count	./src/comm_tools.c	/^int count (double* a, int n_a, int e)$/;"	f	signature:(double* a, int n_a, int e)
+counter	./src/conv/conv_tools.c	/^int counter(int* INDX,int n_INDX,int value)$/;"	f	signature:(int* INDX,int n_INDX,int value)
+cpre_usconv_bco2bdi	./include/conv/conv_tools.h	/^void cpre_usconv_bco2bdi (int mb,int kb,int lb,complex_f** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG);$/;"	p	signature:(int mb,int kb,int lb,complex_f** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG)
+cpre_usconv_bco2bsc	./include/conv/conv_tools.h	/^void  cpre_usconv_bco2bsc (complex_f* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(complex_f* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE)
+cpre_usconv_bco2bsr	./include/conv/conv_tools.h	/^void cpre_usconv_bco2bsr (complex_f* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(complex_f* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE)
+cpre_usconv_bdi2bco	./include/conv/conv_tools.h	/^void cpre_usconv_bdi2bco (complex_f** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb);$/;"	p	signature:(complex_f** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb)
+cpre_usconv_coo2csc	./include/conv/conv_tools.h	/^void cpre_usconv_coo2csc (complex_f* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE);$/;"	p	signature:(complex_f* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE)
+cpre_usconv_coo2csr	./include/conv/conv_tools.h	/^void cpre_usconv_coo2csr (complex_f* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE);$/;"	p	signature:(complex_f* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE)
+cpre_usconv_coo2dia	./include/conv/conv_tools.h	/^void cpre_usconv_coo2dia  (int m,int n,complex_f** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG);$/;"	p	signature:(int m,int n,complex_f** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG)
+cpre_usconv_dia2coo	./include/conv/conv_tools.h	/^void cpre_usconv_dia2coo (complex_f** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m);$/;"	p	signature:(complex_f** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m)
+crsbv_bsc	./src/sbv/rsbv_bsc.c	/^      void crsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+crsbv_bsr	./src/sbv/rsbv_bsr.c	/^      void crsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+crsbv_csc	./src/sbv/rsbv_csc.c	/^      void crsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+crsbv_csr	./src/sbv/rsbv_csr.c	/^      void crsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+crsbv_vbr	./src/sbv/rsbv_vbr.c	/^      void crsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+csp_l	./include/link.h	/^typedef struct csp_l$/;"	s
+csp_l::contents	./include/link.h	/^  CSPMAT contents;$/;"	m	struct:csp_l	access:public
+csp_l::number	./include/link.h	/^  int number;$/;"	m	struct:csp_l	access:public
+csp_l::pntr	./include/link.h	/^ struct csp_l* pntr;$/;"	m	struct:csp_l	typeref:struct:csp_l::csp_l	access:public
+csp_linknode	./include/link.h	/^}csp_linknode;$/;"	t	typeref:struct:csp_l
+dA_row_col	./include/conv/conv_tools.h	/^double dA_row_col();$/;"	p	signature:()
+dA_row_col	./src/conv/conv_tools.c	/^double dA_row_col (double* VAL,int n_VAL,int* INDX,int* JNDX,int i,int j)$/;"	f	signature:(double* VAL,int n_VAL,int* INDX,int* JNDX,int i,int j)
+dAb_row_col	./include/conv/conv_tools.h	/^double dAb_row_col();$/;"	p	signature:()
+dAb_row_col	./src/conv/conv_tools.c	/^double dAb_row_col  (double* VAL,int* BINDX,int n_BINDX,int* BJNDX,int i,int j,int sub_ind,int lb)$/;"	f	signature:(double* VAL,int* BINDX,int n_BINDX,int* BJNDX,int i,int j,int sub_ind,int lb)
+dINS_bl_entr	./include/INS_ROUTINER.h	/^void dINS_bl_entr (d_matrix* pmatrix,double val,int i,int j,int* istat);$/;"	p	signature:(d_matrix* pmatrix,double val,int i,int j,int* istat)
+dINS_bl_entr	./src/ins_routiner.c	/^void dINS_bl_entr (d_matrix* pmatrix,double val,int i,int j,int* istat)$/;"	f	signature:(d_matrix* pmatrix,double val,int i,int j,int* istat)
+dINS_block	./include/INS_ROUTINER.h	/^void dINS_block (d_matrix* pmatrix,double** val,int r_val,int c_val,int i,int j,int* istat);$/;"	p	signature:(d_matrix* pmatrix,double** val,int r_val,int c_val,int i,int j,int* istat)
+dINS_block	./src/ins_routiner.c	/^void dINS_block (d_matrix* pmatrix,double** val,int r_val,int c_val,int i,int j,int* istat)$/;"	f	signature:(d_matrix* pmatrix,double** val,int r_val,int c_val,int i,int j,int* istat)
+dINS_entry	./include/INS_ROUTINER.h	/^void dINS_entry(d_matrix * pmatrix, double val,int i,int j,int* istat);$/;"	p	signature:(d_matrix * pmatrix, double val,int i,int j,int* istat)
+dINS_entry	./src/ins_routiner.c	/^void dINS_entry(d_matrix * pmatrix, double val,int i,int j,int* istat)$/;"	f	signature:(d_matrix * pmatrix, double val,int i,int j,int* istat)
+dINS_varbl_entr	./include/INS_ROUTINER.h	/^void dINS_varbl_entr(d_matrix* vpmatrix,double val,int i,int j,int* istat);$/;"	p	signature:(d_matrix* vpmatrix,double val,int i,int j,int* istat)
+dINS_varbl_entr	./src/ins_routiner.c	/^void dINS_varbl_entr(d_matrix* vpmatrix,double val,int i,int j,int* istat)$/;"	f	signature:(d_matrix* vpmatrix,double val,int i,int j,int* istat)
+dINS_varblock	./include/INS_ROUTINER.h	/^void dINS_varblock(d_matrix* vpmatrix,double** val,int r_val,int c_val,int i,int j,int* istat);$/;"	p	signature:(d_matrix* vpmatrix,double** val,int r_val,int c_val,int i,int j,int* istat)
+dINS_varblock	./src/ins_routiner.c	/^void dINS_varblock(d_matrix* vpmatrix,double** val,int r_val,int c_val,int i,int j,int* istat)$/;"	f	signature:(d_matrix* vpmatrix,double** val,int r_val,int c_val,int i,int j,int* istat)
+d_dealloc	./include/INSERTING.h	/^void d_dealloc (d_matrix* pmatrix,int* istat);$/;"	p	signature:(d_matrix* pmatrix,int* istat)
+d_dealloc	./src/inserting.c	/^void d_dealloc (d_matrix* pmatrix,int* istat)$/;"	f	signature:(d_matrix* pmatrix,int* istat)
+d_element	./include/INSERTING.h	/^}d_element;$/;"	t	typeref:struct:delement
+d_element_num	./include/INSERTING.h	/^int d_element_num  (d_matrix* pmatrix,int i,int j,int* istat);$/;"	p	signature:(d_matrix* pmatrix,int i,int j,int* istat)
+d_element_num	./src/inserting.c	/^int d_element_num  (d_matrix* pmatrix,int i,int j,int* istat)$/;"	f	signature:(d_matrix* pmatrix,int i,int j,int* istat)
+d_element_start	./include/INSERTING.h	/^  d_element* d_element_start;$/;"	m	struct:dmatrix	access:public
+d_inblock	./include/INSERTING.h	/^}d_inblock;$/;"	t	typeref:struct:__anon9
+d_inelement	./include/INSERTING.h	/^}d_inelement;$/;"	t	typeref:struct:__anon11
+d_inpnt1	./include/INSERTING.h	/^}d_inpnt1;$/;"	t	typeref:struct:__anon8
+d_invblock	./include/INSERTING.h	/^}d_invblock;$/;"	t	typeref:struct:__anon10
+d_matrix	./include/INSERTING.h	/^}d_matrix;$/;"	t	typeref:struct:dmatrix
+daccess_element	./include/INSERTING.h	/^d_inelement* daccess_element (int nmb_element,d_matrix* pmatrix);$/;"	p	signature:(int nmb_element,d_matrix* pmatrix)
+daccess_element	./src/inserting.c	/^d_inelement* daccess_element (int nmb_element,d_matrix* pmatrix)$/;"	f	signature:(int nmb_element,d_matrix* pmatrix)
+daccess_matrix	./include/INSERTING.h	/^d_matrix* daccess_matrix (d_matrix* p);$/;"	p	signature:(d_matrix* p)
+daccess_matrix	./src/inserting.c	/^d_matrix* daccess_matrix (d_matrix* p)$/;"	f	signature:(d_matrix* p)
+db_up_order	./include/conv/conv_tools.h	/^void db_up_order();$/;"	p	signature:()
+db_up_order	./src/conv/conv_tools.c	/^void db_up_order (double* VAL,int n_VAL,int lbxlb,int* BINDX)$/;"	f	signature:(double* VAL,int n_VAL,int lbxlb,int* BINDX)
+dblock_H_mult_vec	./include/dense.h	/^void dblock_H_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr);$/;"	p	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_H_mult_vec	./src/dense.c	/^void dblock_H_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr)$/;"	f	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_T_mult_vec	./include/dense.h	/^void dblock_T_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr);$/;"	p	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_T_mult_vec	./src/dense.c	/^void dblock_T_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr)$/;"	f	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_Z_mult_vec	./include/dense.h	/^void dblock_Z_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr);$/;"	p	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_Z_mult_vec	./src/dense.c	/^void dblock_Z_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr)$/;"	f	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_l_mult_vec	./include/dense.h	/^void dblock_l_mult_vec (double *A, double *x, int n, double *y, int m, int *ierr);$/;"	p	signature:(double *A, double *x, int n, double *y, int m, int *ierr)
+dblock_l_mult_vec	./src/dense.c	/^void dblock_l_mult_vec (double *A, double *x, int n, double *y, int m,int* ierr)$/;"	f	signature:(double *A, double *x, int n, double *y, int m,int* ierr)
+dblock_mult_vec	./include/dense.h	/^void dblock_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr);$/;"	p	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_mult_vec	./src/dense.c	/^void dblock_mult_vec (double *A, double *x, int n, double *y, int m, char store, int* ierr)$/;"	f	signature:(double *A, double *x, int n, double *y, int m, char store, int* ierr)
+dblock_r_mult_vec	./include/dense.h	/^void dblock_r_mult_vec (double *A, double *x, int n, double *y, int m, int *ierr);$/;"	p	signature:(double *A, double *x, int n, double *y, int m, int *ierr)
+dblock_r_mult_vec	./src/dense.c	/^void dblock_r_mult_vec (double *A, double *x, int n, double *y, int m,int* ierr)$/;"	f	signature:(double *A, double *x, int n, double *y, int m,int* ierr)
+ddetect_bdiag	./include/conv/conv_tools.h	/^void ddetect_bdiag();$/;"	p	signature:()
+ddetect_bdiag	./src/conv/conv_tools.c	/^void ddetect_bdiag  (double* VAL,int* BINDX,int n_BINDX,int* BJNDX,int ind,int BLDA,int *test,int lb)$/;"	f	signature:(double* VAL,int* BINDX,int n_BINDX,int* BJNDX,int ind,int BLDA,int *test,int lb)
+ddetect_diag	./include/conv/conv_tools.h	/^void ddetect_diag();$/;"	p	signature:()
+ddetect_diag	./src/conv/conv_tools.c	/^void ddetect_diag(double* VAL,int n_VAL ,int* INDX,int* JNDX,int ind,int LDA,int* test)$/;"	f	signature:(double* VAL,int n_VAL ,int* INDX,int* JNDX,int ind,int LDA,int* test)
+dealloc_d_element	./include/INSERTING.h	/^void dealloc_d_element  (int nmb_element,d_matrix* pmatrix,int* istat);$/;"	p	signature:(int nmb_element,d_matrix* pmatrix,int* istat)
+dealloc_d_element	./src/inserting.c	/^void dealloc_d_element  (int nmb_element,d_matrix* pmatrix,int* istat)$/;"	f	signature:(int nmb_element,d_matrix* pmatrix,int* istat)
+dealloc_d_matrix	./include/INSERTING.h	/^void dealloc_d_matrix  (d_matrix* matrix);$/;"	p	signature:(d_matrix* matrix)
+dealloc_d_matrix	./src/inserting.c	/^void dealloc_d_matrix  (d_matrix* matrix)$/;"	f	signature:(d_matrix* matrix)
+del_capsule	./include/hash.h	/^void del_capsule(int nmb,int* ierr);$/;"	p	signature:(int nmb,int* ierr)
+del_capsule	./src/hash.c	/^void del_capsule(int nmb,int* ierr)$/;"	f	signature:(int nmb,int* ierr)
+del_csp	./include/link.h	/^void del_csp(csp_linknode * sp_l,int *ierr);$/;"	p	signature:(csp_linknode * sp_l,int *ierr)
+del_csp	./src/link.c	/^void del_csp(csp_linknode * sp_l,int *ierr)$/;"	f	signature:(csp_linknode * sp_l,int *ierr)
+del_dsp	./include/link.h	/^void del_dsp(dsp_linknode * sp_l,int *ierr);$/;"	p	signature:(dsp_linknode * sp_l,int *ierr)
+del_dsp	./src/link.c	/^void del_dsp(dsp_linknode * sp_l,int *ierr)$/;"	f	signature:(dsp_linknode * sp_l,int *ierr)
+del_isp	./include/link.h	/^void del_isp(isp_linknode* sp_l,int *ierr);$/;"	p	signature:(isp_linknode* sp_l,int *ierr)
+del_isp	./src/link.c	/^void del_isp(isp_linknode* sp_l,int *ierr)$/;"	f	signature:(isp_linknode* sp_l,int *ierr)
+del_ssp	./include/link.h	/^void del_ssp(ssp_linknode * sp_l,int *ierr);$/;"	p	signature:(ssp_linknode * sp_l,int *ierr)
+del_ssp	./src/link.c	/^void del_ssp(ssp_linknode * sp_l,int *ierr)$/;"	f	signature:(ssp_linknode * sp_l,int *ierr)
+del_zsp	./include/link.h	/^void del_zsp(zsp_linknode * sp_l,int *ierr);$/;"	p	signature:(zsp_linknode * sp_l,int *ierr)
+del_zsp	./src/link.c	/^void del_zsp(zsp_linknode * sp_l,int *ierr)$/;"	f	signature:(zsp_linknode * sp_l,int *ierr)
+delement	./include/INSERTING.h	/^typedef struct delement{$/;"	s
+delement::contents	./include/INSERTING.h	/^  d_inelement contents;$/;"	m	struct:delement	access:public
+delement::number	./include/INSERTING.h	/^  int number;$/;"	m	struct:delement	access:public
+delement::pntr	./include/INSERTING.h	/^  struct delement* pntr;$/;"	m	struct:delement	typeref:struct:delement::delement	access:public
+dlmbv_bco	./include/mbv/lmbv_bco.h	/^void dlmbv_bco (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_bco	./src/mbv/lmbv_bco.c	/^void dlmbv_bco (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_bdi	./include/mbv/lmbv_bdi.h	/^void dlmbv_bdi (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_bdi	./src/mbv/lmbv_bdi.c	/^void dlmbv_bdi (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_bsc	./include/mbv/lmbv_bsc.h	/^void dlmbv_bsc (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_bsc	./src/mbv/lmbv_bsc.c	/^void dlmbv_bsc (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_bsr	./include/mbv/lmbv_bsr.h	/^void dlmbv_bsr (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_bsr	./src/mbv/lmbv_bsr.c	/^void dlmbv_bsr (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_coo	./include/mbv/lmbv_coo.h	/^int dlmbv_coo(DSPMAT* mat, double* x, int n, double* y, int m, int *ierr);$/;"	p	signature:(DSPMAT* mat, double* x, int n, double* y, int m, int *ierr)
+dlmbv_coo	./src/mbv/lmbv_coo.c	/^int dlmbv_coo(DSPMAT* mat,double* x,int n,double* y,int m,int *ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int *ierr)
+dlmbv_csc	./include/mbv/lmbv_csc.h	/^void dlmbv_csc(DSPMAT* mat, double* x, int n, double* y, int m, int* ierr);$/;"	p	signature:(DSPMAT* mat, double* x, int n, double* y, int m, int* ierr)
+dlmbv_csc	./src/mbv/lmbv_csc.c	/^void dlmbv_csc (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_csr	./include/mbv/lmbv_csr.h	/^void dlmbv_csr(DSPMAT* mat, double* x, int n, double* y, int m, int* ierr);$/;"	p	signature:(DSPMAT* mat, double* x, int n, double* y, int m, int* ierr)
+dlmbv_csr	./src/mbv/lmbv_csr.c	/^void dlmbv_csr(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_dia	./include/mbv/lmbv_dia.h	/^void dlmbv_dia (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_dia	./src/mbv/lmbv_dia.c	/^void dlmbv_dia( DSPMAT* mat,double* x,int n, double* y,int m,int* ierr)$/;"	f	signature:( DSPMAT* mat,double* x,int n, double* y,int m,int* ierr)
+dlmbv_vbr	./include/mbv/lmbv_vbr.h	/^void dlmbv_vbr (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+dlmbv_vbr	./src/mbv/lmbv_vbr.c	/^void dlmbv_vbr (DSPMAT* mat,double* x,int n,double *y,int m,int *ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double *y,int m,int *ierr)
+dlsbv_bco	./src/sbv/lsbv_bco.c	/^      void dlsbv_bco (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dlsbv_bsc	./src/sbv/lsbv_bsc.c	/^      void dlsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dlsbv_bsr	./src/sbv/lsbv_bsr.c	/^      void dlsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dlsbv_coo	./src/sbv/lsbv_coo.c	/^      void dlsbv_coo (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dlsbv_csc	./src/sbv/lsbv_csc.c	/^      void dlsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dlsbv_csr	./src/sbv/lsbv_csr.c	/^      void dlsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dlsbv_vbr	./src/sbv/lsbv_vbr.c	/^      void dlsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dmatrix	./include/INSERTING.h	/^typedef struct dmatrix{$/;"	s
+dmatrix::DIM	./include/INSERTING.h	/^  int DIM[6];$/;"	m	struct:dmatrix	access:public
+dmatrix::d_element_start	./include/INSERTING.h	/^  d_element* d_element_start;$/;"	m	struct:dmatrix	access:public
+dmatrix::format	./include/INSERTING.h	/^  char format;$/;"	m	struct:dmatrix	access:public
+dmatrix::news	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:dmatrix	access:public
+dmatrix::number	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:dmatrix	access:public
+dmatrix::pntr	./include/INSERTING.h	/^  struct dmatrix* pntr;$/;"	m	struct:dmatrix	typeref:struct:dmatrix::dmatrix	access:public
+dmatrix::property	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:dmatrix	access:public
+dmatrix::sub_cols	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+dmatrix::sub_rows	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+dmatrix::trb	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+dmatrix::tre	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+dpre_usconv_bco2bdi	./include/conv/conv_tools.h	/^void dpre_usconv_bco2bdi (int mb,int kb,int lb,double **VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG);$/;"	p	signature:(int mb,int kb,int lb,double **VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG)
+dpre_usconv_bco2bdi	./src/conv/conv_tools.c	/^void dpre_usconv_bco2bdi (int mb,int kb,int lb,double** VAL,int** BINDX,int n_BINDX,int* BJNDX,int* BLDA,int* BNDIAG)$/;"	f	signature:(int mb,int kb,int lb,double** VAL,int** BINDX,int n_BINDX,int* BJNDX,int* BLDA,int* BNDIAG)
+dpre_usconv_bco2bsc	./include/conv/conv_tools.h	/^void  dpre_usconv_bco2bsc (double* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(double* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE)
+dpre_usconv_bco2bsc	./src/conv/conv_tools.c	/^void dpre_usconv_bco2bsc (double* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE)$/;"	f	signature:(double* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE)
+dpre_usconv_bco2bsr	./include/conv/conv_tools.h	/^void dpre_usconv_bco2bsr (double* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(double* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE)
+dpre_usconv_bco2bsr	./src/conv/conv_tools.c	/^void dpre_usconv_bco2bsr (double* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE)$/;"	f	signature:(double* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE)
+dpre_usconv_bdi2bco	./include/conv/conv_tools.h	/^void dpre_usconv_bdi2bco (double** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb);$/;"	p	signature:(double** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb)
+dpre_usconv_bdi2bco	./src/conv/conv_tools.c	/^void dpre_usconv_bdi2bco (double** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb)$/;"	f	signature:(double** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb)
+dpre_usconv_coo2csc	./include/conv/conv_tools.h	/^void dpre_usconv_coo2csc (double* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE);$/;"	p	signature:(double* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE)
+dpre_usconv_coo2csc	./src/conv/conv_tools.c	/^void dpre_usconv_coo2csc (double* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE)$/;"	f	signature:(double* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE)
+dpre_usconv_coo2csr	./include/conv/conv_tools.h	/^void dpre_usconv_coo2csr (double* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE);$/;"	p	signature:(double* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE)
+dpre_usconv_coo2csr	./src/conv/conv_tools.c	/^void dpre_usconv_coo2csr (double* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE)$/;"	f	signature:(double* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE)
+dpre_usconv_coo2dia	./include/conv/conv_tools.h	/^void dpre_usconv_coo2dia  (int m,int n,double** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG);$/;"	p	signature:(int m,int n,double** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG)
+dpre_usconv_coo2dia	./src/conv/conv_tools.c	/^void dpre_usconv_coo2dia  (int m,int n,double** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG)$/;"	f	signature:(int m,int n,double** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG)
+dpre_usconv_dia2coo	./include/conv/conv_tools.h	/^void dpre_usconv_dia2coo (double** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m);$/;"	p	signature:(double** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m)
+dpre_usconv_dia2coo	./src/conv/conv_tools.c	/^void dpre_usconv_dia2coo (double** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m)$/;"	f	signature:(double** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m)
+drmbv_bco	./include/mbv/rmbv_bco.h	/^void drmbv_bco (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_bco	./src/mbv/rmbv_bco.c	/^void drmbv_bco (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_bdi	./include/mbv/rmbv_bdi.h	/^void drmbv_bdi (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_bdi	./src/mbv/rmbv_bdi.c	/^void drmbv_bdi (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_bsc	./src/mbv/rmbv_bsc.c	/^void drmbv_bsc (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_bsr	./include/mbv/rmbv_bsr.h	/^void drmbv_bsr (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_bsr	./src/mbv/rmbv_bsr.c	/^void drmbv_bsr (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_coo	./include/mbv/rmbv_coo.h	/^int drmbv_coo(DSPMAT* mat, double *x, int n,  double *y, int m, int *ierr);$/;"	p	signature:(DSPMAT* mat, double *x, int n, double *y, int m, int *ierr)
+drmbv_coo	./src/mbv/rmbv_coo.c	/^int drmbv_coo(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_csc	./include/mbv/rmbv_csc.h	/^void drmbv_csc(DSPMAT* mat, double* x, int n,  double* y, int m, int* ierr);$/;"	p	signature:(DSPMAT* mat, double* x, int n, double* y, int m, int* ierr)
+drmbv_csc	./src/mbv/rmbv_csc.c	/^void drmbv_csc (DSPMAT* mat, double* x, int n, double* y, int m, int* ierr)$/;"	f	signature:(DSPMAT* mat, double* x, int n, double* y, int m, int* ierr)
+drmbv_csr	./include/mbv/rmbv_csr.h	/^void drmbv_csr(DSPMAT* mat,double* x, int n, double* y, int m, int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x, int n, double* y, int m, int* ierr)
+drmbv_csr	./src/mbv/rmbv_csr.c	/^void drmbv_csr (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_dia	./include/mbv/rmbv_dia.h	/^void drmbv_dia (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_dia	./src/mbv/rmbv_dia.c	/^void drmbv_dia (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_vbr	./include/mbv/rmbv_vbr.h	/^void drmbv_vbr (DSPMAT* mat,double* x,int n,double* y,int m,int* ierr);$/;"	p	signature:(DSPMAT* mat,double* x,int n,double* y,int m,int* ierr)
+drmbv_vbr	./src/mbv/rmbv_vbr.c	/^void drmbv_vbr (DSPMAT* mat,double* x,int n,double *y,int m,int *ierr)$/;"	f	signature:(DSPMAT* mat,double* x,int n,double *y,int m,int *ierr)
+drsbv_bsc	./src/sbv/rsbv_bsc.c	/^      void drsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+drsbv_bsr	./src/sbv/rsbv_bsr.c	/^      void drsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+drsbv_csc	./src/sbv/rsbv_csc.c	/^      void drsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+drsbv_csr	./src/sbv/rsbv_csr.c	/^      void drsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+drsbv_vbr	./src/sbv/rsbv_vbr.c	/^      void drsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+dsp_l	./include/link.h	/^typedef struct dsp_l$/;"	s
+dsp_l::contents	./include/link.h	/^  DSPMAT contents;$/;"	m	struct:dsp_l	access:public
+dsp_l::number	./include/link.h	/^  int number;$/;"	m	struct:dsp_l	access:public
+dsp_l::pntr	./include/link.h	/^  struct dsp_l* pntr;$/;"	m	struct:dsp_l	typeref:struct:dsp_l::dsp_l	access:public
+dsp_linknode	./include/link.h	/^}dsp_linknode;$/;"	t	typeref:struct:dsp_l
+dump_matrix	./include/comm_tools.h	/^void dump_matrix(void*);$/;"	p	signature:(void*)
+dump_matrix	./src/comm_tools.c	/^void dump_matrix (void* matrix)$/;"	f	signature:(void* matrix)
+duscr_bco	./include/uscr/uscr_bco.h	/^dsp_linknode* duscr_bco(int m,int n,double *val,int n_val,int* bindx,int n_bindx,int* bjndx,int n_bjndx,int bnnz,int mb,int kb,int lb,int prpty,int* istat);$/;"	p	signature:(int m,int n,double *val,int n_val,int* bindx,int n_bindx,int* bjndx,int n_bjndx,int bnnz,int mb,int kb,int lb,int prpty,int* istat)
+duscr_bco	./src/uscr/uscr_bco.c	/^dsp_linknode* duscr_bco(int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bjndx,int n_bjndx,int bnnz,int mb,int kb,int lb,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bjndx,int n_bjndx,int bnnz,int mb,int kb,int lb,int prpty,int* istat)
+duscr_bco	./src/uscr_bco.h	/^dsp_linknode* duscr_bco(int m,int n,int* val,int n_val,int* bindx,int n_bindx,int* bjndx,int n_bjndx,int bnnz,int mb,int kb,int lb,int prpty,int* istat)$/;"	f	signature:(int m,int n,int* val,int n_val,int* bindx,int n_bindx,int* bjndx,int n_bjndx,int bnnz,int mb,int kb,int lb,int prpty,int* istat)
+duscr_bdi	./include/uscr/uscr_bdi.h	/^dsp_linknode* duscr_bdi (int m,int n,double* val,int n_val,int blda,int* ibdiag,int n_ibdiag,int nbdiag,int mb,int kb,int lb,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int blda,int* ibdiag,int n_ibdiag,int nbdiag,int mb,int kb,int lb,int prpty,int* istat)
+duscr_bdi	./src/uscr/uscr_bdi.c	/^dsp_linknode* duscr_bdi (int m,int n,double* val,int n_val,int blda,int* ibdiag,int n_ibdiag,int nbdiag,int mb,int kb,int lb,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int blda,int* ibdiag,int n_ibdiag,int nbdiag,int mb,int kb,int lb,int prpty,int* istat)
+duscr_block_begin	./src/uscr/uscr_block_begin.c	/^d_matrix* duscr_block_begin (int Mb,int Nb,int k,int l)$/;"	f	signature:(int Mb,int Nb,int k,int l)
+duscr_blockend	./include/INS_ROUTINER.h	/^dsp_linknode* duscr_blockend(d_matrix* A,int prpty,int *istat);$/;"	p	signature:(d_matrix* A,int prpty,int *istat)
+duscr_blockend	./src/ins_routiner.c	/^dsp_linknode* duscr_blockend(d_matrix* A,int prpty,int* istat)$/;"	f	signature:(d_matrix* A,int prpty,int* istat)
+duscr_bsc	./include/uscr/uscr_bsc.h	/^dsp_linknode* duscr_bsc (int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat)
+duscr_bsc	./src/uscr/uscr_bsc.c	/^dsp_linknode* duscr_bsc (int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat)
+duscr_bsr	./include/uscr/uscr_bsr.h	/^dsp_linknode* duscr_bsr (int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat)
+duscr_bsr	./src/uscr/uscr_bsr.c	/^dsp_linknode* duscr_bsr (int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int* bindx,int n_bindx,int* bpntrb,int n_bpntrb ,int* bpntre,int n_bpntre,int mb,int kb,int lb,int prpty,int* istat)
+duscr_coo	./include/uscr/uscr_coo.h	/^dsp_linknode* duscr_coo(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat)
+duscr_coo	./src/uscr/uscr_coo.c	/^dsp_linknode* duscr_coo(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat)
+duscr_coo	./src/uscr_coo.c	/^dsp_linknode* duscr_coo(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat)
+duscr_coo	./src/uscr_coo.h	/^dsp_linknode* duscr_coo(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int* indx,int* jndx,int nnz,int prpty,int* istat)
+duscr_csc	./include/uscr/uscr_csc.h	/^dsp_linknode* duscr_csc (int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat)
+duscr_csc	./src/uscr/uscr_csc.c	/^dsp_linknode* duscr_csc (int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat)
+duscr_csr	./include/uscr/uscr_csr.h	/^dsp_linknode* duscr_csr (int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat)
+duscr_csr	./src/uscr/uscr_csr.c	/^dsp_linknode* duscr_csr (int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int* indx,int n_indx,int* pntrb,int n_pntrb,int* pntre,int n_pntre,int prpty,int* istat)
+duscr_dia	./include/uscr/uscr_dia.h	/^dsp_linknode* duscr_dia (int m,int n,double* val,int n_val,int lda,int* idiag,int n_idiag,int ndiag,int prpty,int* istat);$/;"	p	signature:(int m,int n,double* val,int n_val,int lda,int* idiag,int n_idiag,int ndiag,int prpty,int* istat)
+duscr_dia	./src/uscr/uscr_dia.c	/^dsp_linknode* duscr_dia (int m,int n,double* val,int n_val,int lda,int* idiag,int n_idiag,int ndiag,int prpty,int* istat)$/;"	f	signature:(int m,int n,double* val,int n_val,int lda,int* idiag,int n_idiag,int ndiag,int prpty,int* istat)
+duscr_normend	./include/INS_ROUTINER.h	/^dsp_linknode* duscr_normend(d_matrix* A,int prpty,int *istat);$/;"	p	signature:(d_matrix* A,int prpty,int *istat)
+duscr_normend	./src/ins_routiner.c	/^dsp_linknode* duscr_normend(d_matrix* A,int prpty,int *istat)$/;"	f	signature:(d_matrix* A,int prpty,int *istat)
+duscr_varend	./include/INS_ROUTINER.h	/^dsp_linknode*  duscr_varend (d_matrix* A,int prpty,int *istat);$/;"	p	signature:(d_matrix* A,int prpty,int *istat)
+duscr_varend	./src/ins_routiner.c	/^dsp_linknode* duscr_varend (d_matrix* A,int prpty,int *istat)$/;"	f	signature:(d_matrix* A,int prpty,int *istat)
+duscr_vbr	./include/uscr/uscr_vbr.h	/^dsp_linknode* duscr_vbr(int m,int n,int* val,int n_val,int* indx,int n_indx,int* bindx,int n_bindx,int* rpntr,int n_rpntr,int* cpntr,int n_cpntr,int* bpntrb,int n_bpntrb,int* bpntre,int n_bpntre,int mb,int kb,int prpty,int* istat);$/;"	p	signature:(int m,int n,int* val,int n_val,int* indx,int n_indx,int* bindx,int n_bindx,int* rpntr,int n_rpntr,int* cpntr,int n_cpntr,int* bpntrb,int n_bpntrb,int* bpntre,int n_bpntre,int mb,int kb,int prpty,int* istat)
+duscr_vbr	./src/uscr/uscr_vbr.c	/^dsp_linknode* duscr_vbr(int m,int n,int* val,int n_val,int* indx,int n_indx,int* bindx,int n_bindx,int* rpntr,int n_rpntr,int* cpntr,int n_cpntr,int* bpntrb,int n_bpntrb,int* bpntre,int n_bpntre,int mb,int kb,int prpty,int* istat)$/;"	f	signature:(int m,int n,int* val,int n_val,int* indx,int n_indx,int* bindx,int n_bindx,int* rpntr,int n_rpntr,int* cpntr,int n_cpntr,int* bpntrb,int n_bpntrb,int* bpntre,int n_bpntre,int mb,int kb,int prpty,int* istat)
+duscr_vbr	./src/uscr_vbr.h	/^dsp_linknode* duscr_vbr(int m,int n,int* val,int n_val,int* indx,int n_indx,int* bindx,int n_bindx,int* rpntr,int n_rpntr,int* cpntr,int n_cpntr,int* bpntrb,int n_bpntrb,int* bpntre,int n_bpntre,int mb,int kb,int prpty,int* istat)$/;"	f	signature:(int m,int n,int* val,int n_val,int* indx,int n_indx,int* bindx,int n_bindx,int* rpntr,int n_rpntr,int* cpntr,int n_cpntr,int* bpntrb,int n_bpntrb,int* bpntre,int n_bpntre,int mb,int kb,int prpty,int* istat)
+final_order	./src/conv/conv_tools.c	/^void final_order(int* JNDX,int* final_indx,int* row_subdv,int n_row_subdv)$/;"	f	signature:(int* JNDX,int* final_indx,int* row_subdv,int n_row_subdv)
+format	./include/INSERTING.h	/^  char format;$/;"	m	struct:dmatrix	access:public
+format	./include/INSERTING.h	/^  char format;\/\/n,b,v means:normal,block,vblock$/;"	m	struct:imatrix	access:public
+fpre_usconv_coo2csr	./include/conv/conv_tools.h	/^void fpre_usconv_coo2csr (float* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE);$/;"	p	signature:(float* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE)
+get_descra	./include/properties.h	/^void get_descra(char* descra,int descriptor,char* message,int *ierr);$/;"	p	signature:(char* descra,int descriptor,char* message,int *ierr)
+get_descra	./src/properties.c	/^void get_descra(char* descra,int descriptor,char* message,int *ierr)$/;"	f	signature:(char* descra,int descriptor,char* message,int *ierr)
+get_descra	./src/ussv.c	/^int get_descra();$/;"	p	file:
+get_infoa	./include/properties.h	/^void get_infoa(int* infoa,char descr, int* val,int *ierr);$/;"	p	signature:(int* infoa,char descr, int* val,int *ierr)
+get_infoa	./src/properties.c	/^void get_infoa(int* infoa,char descr, int* val,int *ierr)$/;"	f	signature:(int* infoa,char descr, int* val,int *ierr)
+hash	./include/hash.h	/^capsule* hash;$/;"	v
+hash_length	./include/hash.h	/^int hash_length;$/;"	v
+hash_top	./include/hash.h	/^cappntr* hash_top;$/;"	v
+iA_row_col	./include/conv/conv_tools.h	/^int iA_row_col();$/;"	p	signature:()
+iAb_row_col	./include/conv/conv_tools.h	/^int iAb_row_col();$/;"	p	signature:()
+i_element	./include/INSERTING.h	/^}i_element;$/;"	t	typeref:struct:ielement
+i_element_start	./include/INSERTING.h	/^  i_element* i_element_start;$/;"	m	struct:imatrix	access:public
+i_inblock	./include/INSERTING.h	/^}i_inblock;$/;"	t	typeref:struct:__anon5
+i_inelement	./include/INSERTING.h	/^}i_inelement;$/;"	t	typeref:struct:__anon7
+i_inpnt1	./include/INSERTING.h	/^}i_inpnt1;$/;"	t	typeref:struct:__anon4
+i_invblock	./include/INSERTING.h	/^}i_invblock;$/;"	t	typeref:struct:__anon6
+i_matrix	./include/INSERTING.h	/^}i_matrix;$/;"	t	typeref:struct:imatrix
+ib_up_order	./include/conv/conv_tools.h	/^void ib_up_order();$/;"	p	signature:()
+idetect_bdiag	./include/conv/conv_tools.h	/^void idetect_bdiag();$/;"	p	signature:()
+idetect_diag	./include/conv/conv_tools.h	/^void idetect_diag();$/;"	p	signature:()
+ielement	./include/INSERTING.h	/^typedef struct ielement{$/;"	s
+ielement::contents	./include/INSERTING.h	/^  i_inelement contents;$/;"	m	struct:ielement	access:public
+ielement::number	./include/INSERTING.h	/^  int number;$/;"	m	struct:ielement	access:public
+ielement::pntr	./include/INSERTING.h	/^  struct ielement* pntr;$/;"	m	struct:ielement	typeref:struct:ielement::ielement	access:public
+ilsbv_bco	./src/sbv/lsbv_bco.c	/^      void ilsbv_bco (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_bdi	./src/sbv/lsbv_bdi.c	/^      void ilsbv_bdi (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_bsc	./src/sbv/lsbv_bsc.c	/^      void ilsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_bsr	./src/sbv/lsbv_bsr.c	/^      void ilsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_coo	./src/sbv/lsbv_coo.c	/^      void ilsbv_coo (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_csc	./src/sbv/lsbv_csc.c	/^      void ilsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_csr	./src/sbv/lsbv_csr.c	/^      void ilsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_dia	./src/sbv/lsbv_dia.c	/^      void ilsbv_dia (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ilsbv_vbr	./src/sbv/lsbv_vbr.c	/^      void ilsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+imatrix	./include/INSERTING.h	/^typedef struct imatrix{$/;"	s
+imatrix::DIM	./include/INSERTING.h	/^  int DIM[6];$/;"	m	struct:imatrix	access:public
+imatrix::format	./include/INSERTING.h	/^  char format;\/\/n,b,v means:normal,block,vblock$/;"	m	struct:imatrix	access:public
+imatrix::i_element_start	./include/INSERTING.h	/^  i_element* i_element_start;$/;"	m	struct:imatrix	access:public
+imatrix::news	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:imatrix	access:public
+imatrix::number	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:imatrix	access:public
+imatrix::pntr	./include/INSERTING.h	/^  struct imatrix* pntr;$/;"	m	struct:imatrix	typeref:struct:imatrix::imatrix	access:public
+imatrix::property	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:imatrix	access:public
+imatrix::sub_cols	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+imatrix::sub_rows	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+imatrix::trb	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+imatrix::tre	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+ipre_usconv_bco2bdi	./include/conv/conv_tools.h	/^void ipre_usconv_bco2bdi (int mb,int kb,int lb,int** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG);$/;"	p	signature:(int mb,int kb,int lb,int** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG)
+ipre_usconv_bco2bsc	./include/conv/conv_tools.h	/^void  ipre_usconv_bco2bsc (int* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(int* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE)
+ipre_usconv_bco2bsr	./include/conv/conv_tools.h	/^void ipre_usconv_bco2bsr (int* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(int* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE)
+ipre_usconv_bdi2bco	./include/conv/conv_tools.h	/^void ipre_usconv_bdi2bco (int** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb);$/;"	p	signature:(int** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb)
+ipre_usconv_coo2csc	./include/conv/conv_tools.h	/^void ipre_usconv_coo2csc (int* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE);$/;"	p	signature:(int* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE)
+ipre_usconv_coo2csr	./include/conv/conv_tools.h	/^void ipre_usconv_coo2csr (int* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE);$/;"	p	signature:(int* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE)
+ipre_usconv_coo2dia	./include/conv/conv_tools.h	/^void ipre_usconv_coo2dia  (int m,int n,int** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG);$/;"	p	signature:(int m,int n,int** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG)
+ipre_usconv_dia2coo	./include/conv/conv_tools.h	/^void ipre_usconv_dia2coo (int** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m);$/;"	p	signature:(int** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m)
+irsbv_bco	./src/sbv/rsbv_bco.c	/^void irsbv_bco (mat,x,ierr)$/;"	p	file:
+irsbv_bdi	./src/sbv/rsbv_bdi.c	/^      void irsbv_bdi (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+irsbv_bsc	./src/sbv/rsbv_bsc.c	/^      void irsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+irsbv_bsr	./src/sbv/rsbv_bsr.c	/^      void irsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+irsbv_coo	./src/sbv/rsbv_coo.c	/^void irsbv_coo(ISPMAT* mat,int* x,int n_x,int &ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int &ierr)
+irsbv_csc	./src/sbv/rsbv_csc.c	/^      void irsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+irsbv_csr	./src/sbv/rsbv_csr.c	/^      void irsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+irsbv_dia	./src/sbv/rsbv_dia.c	/^      void irsbv_dia (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+irsbv_vbr	./src/sbv/rsbv_vbr.c	/^      void irsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+isp_l	./include/link.h	/^typedef struct isp_l$/;"	s
+isp_l::contents	./include/link.h	/^  ISPMAT contents;$/;"	m	struct:isp_l	access:public
+isp_l::number	./include/link.h	/^  int number;$/;"	m	struct:isp_l	access:public
+isp_l::pntr	./include/link.h	/^  struct isp_l* pntr;$/;"	m	struct:isp_l	typeref:struct:isp_l::isp_l	access:public
+isp_linknode	./include/link.h	/^}isp_linknode;$/;"	t	typeref:struct:isp_l
+iuscr_bco	./src/uscr_bco.c	/^iuscr_bco(int m, int n, INOUT int *val, INOUT int *bindx,INOUT int * bjindx, int bnnz, int mb, int kb, int lb, int prpty, int *istat, OUT int *a)$/;"	f	signature:(int m, int n, INOUT int *val, INOUT int *bindx,INOUT int * bjindx, int bnnz, int mb, int kb, int lb, int prpty, int *istat, OUT int *a)
+iuscr_dia	./src/uscr_dia.c	/^int iuscr_dia (int m,int n,INOUT int *val,int lda,INOUT int *idiag,int ndiag,int prpty,istat,a)$/;"	f	signature:(int m,int n,INOUT int *val,int lda,INOUT int *idiag,int ndiag,int prpty,istat,a)
+iuscr_vbr	./src/uscr_vbr.c	/^iuscr_vbr(int m, int n, int *val, INOUT int *indx, int *bindx, int *rpntr, int *cpntr, int *bpntrb, int *bpntre, int mb, int kb, int prpty, int *istat , int *a)$/;"	f	signature:(int m, int n, int *val, INOUT int *indx, int *bindx, int *rpntr, int *cpntr, int *bpntrb, int *bpntre, int mb, int kb, int prpty, int *istat , int *a)
+iussv	./src/ussv.c	/^subroutine iussv (a,x,ierr,transa,alpha)$/;"	f
+jndx	./include/hash.h	/^  int jndx,val_pos;$/;"	m	struct:__anon2	access:public
+main	./test.c	/^int main()$/;"	f
+malloc2d	./include/comm_tools.h	/^void** malloc2d(int rows, int cols, int size);$/;"	p	signature:(int rows, int cols, int size)
+malloc2d	./src/comm_tools.c	/^void** malloc2d(int rows, int cols, int size)$/;"	f	signature:(int rows, int cols, int size)
+matrix_resort	./include/comm_tools.h	/^void matrix_resort(int** p,int* a1,int* a2,int m,int n);$/;"	p	signature:(int** p,int* a1,int* a2,int m,int n)
+maxval	./include/comm_tools.h	/^int maxval(int* a,int n_a);$/;"	p	signature:(int* a,int n_a)
+maxval	./src/comm_tools.c	/^int maxval (int *a, int n_a)$/;"	f	signature:(int *a, int n_a)
+minval	./include/comm_tools.h	/^int minval(int* a,int n_a);$/;"	p	signature:(int* a,int n_a)
+minval	./src/comm_tools.c	/^int minval(int *a, int n_a)$/;"	f	signature:(int *a, int n_a)
+n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+n_A	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+n_BP1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+n_BP2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+n_IA1	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+n_IA2	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+n_PB	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon14	access:public
+n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon15	access:public
+n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon16	access:public
+n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon17	access:public
+n_PE	./include/types.h	/^    int n_A,n_IA1,n_IA2,n_PB,n_PE,n_BP1,n_BP2;$/;"	m	struct:__anon18	access:public
+new_capsule_main	./include/hash.h	/^void new_capsule_main(int indx,int jndx,int pos,int* ierr);$/;"	p	signature:(int indx,int jndx,int pos,int* ierr)
+new_capsule_main	./src/hash.c	/^void new_capsule_main(int indx,int jndx,int pos,int* ierr)$/;"	f	signature:(int indx,int jndx,int pos,int* ierr)
+new_csp	./include/link.h	/^csp_linknode * new_csp(int *ierr);$/;"	p	signature:(int *ierr)
+new_csp	./src/link.c	/^csp_linknode * new_csp(int *ierr)$/;"	f	signature:(int *ierr)
+new_d_element	./include/INSERTING.h	/^int new_d_element (d_matrix* pmatrix,int* istat);$/;"	p	signature:(d_matrix* pmatrix,int* istat)
+new_d_element	./src/inserting.c	/^int new_d_element (d_matrix* pmatrix,int* istat)$/;"	f	signature:(d_matrix* pmatrix,int* istat)
+new_d_matrix	./include/INSERTING.h	/^d_matrix* new_d_matrix (int Mb);$/;"	p	signature:(int Mb)
+new_d_matrix	./src/inserting.c	/^d_matrix* new_d_matrix (int Mb)$/;"	f	signature:(int Mb)
+new_dsp	./include/link.h	/^dsp_linknode * new_dsp(int *ierr);$/;"	p	signature:(int *ierr)
+new_dsp	./src/link.c	/^dsp_linknode * new_dsp(int *ierr)$/;"	f	signature:(int *ierr)
+new_isp	./include/link.h	/^isp_linknode* new_isp(int *ierr);$/;"	p	signature:(int *ierr)
+new_isp	./src/link.c	/^isp_linknode* new_isp(int *ierr)$/;"	f	signature:(int *ierr)
+new_ssp	./include/link.h	/^ssp_linknode * new_ssp(int *ierr);$/;"	p	signature:(int *ierr)
+new_ssp	./src/link.c	/^ssp_linknode * new_ssp(int *ierr)$/;"	f	signature:(int *ierr)
+new_zsp	./include/link.h	/^zsp_linknode * new_zsp(int *ierr);$/;"	p	signature:(int *ierr)
+new_zsp	./src/link.c	/^zsp_linknode * new_zsp(int *ierr)$/;"	f	signature:(int *ierr)
+news	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:dmatrix	access:public
+news	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:imatrix	access:public
+no_of_types	./include/properties.h	23;"	d
+number	./include/INSERTING.h	/^  int number;$/;"	m	struct:delement	access:public
+number	./include/INSERTING.h	/^  int number;$/;"	m	struct:ielement	access:public
+number	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:dmatrix	access:public
+number	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:imatrix	access:public
+number	./include/link.h	/^  int number;$/;"	m	struct:csp_l	access:public
+number	./include/link.h	/^  int number;$/;"	m	struct:dsp_l	access:public
+number	./include/link.h	/^  int number;$/;"	m	struct:isp_l	access:public
+number	./include/link.h	/^  int number;$/;"	m	struct:ssp_l	access:public
+number	./include/link.h	/^  int number;$/;"	m	struct:zsp_l	access:public
+order_type	./include/blas_enum.h	/^typedef enum order_type$/;"	g
+pntin	./include/INSERTING.h	/^  d_inpnt1 pntin;$/;"	m	struct:__anon11	access:public
+pntin	./include/INSERTING.h	/^  i_inpnt1 pntin;$/;"	m	struct:__anon7	access:public
+pntr	./include/INSERTING.h	/^  struct delement* pntr;$/;"	m	struct:delement	typeref:struct:delement::delement	access:public
+pntr	./include/INSERTING.h	/^  struct dmatrix* pntr;$/;"	m	struct:dmatrix	typeref:struct:dmatrix::dmatrix	access:public
+pntr	./include/INSERTING.h	/^  struct ielement* pntr;$/;"	m	struct:ielement	typeref:struct:ielement::ielement	access:public
+pntr	./include/INSERTING.h	/^  struct imatrix* pntr;$/;"	m	struct:imatrix	typeref:struct:imatrix::imatrix	access:public
+pntr	./include/hash.h	/^  capsule* pntr;$/;"	m	struct:__anon2	access:public
+pntr	./include/hash.h	/^  capsule* pntr;$/;"	m	struct:__anon3	access:public
+pntr	./include/link.h	/^  struct dsp_l* pntr;$/;"	m	struct:dsp_l	typeref:struct:dsp_l::dsp_l	access:public
+pntr	./include/link.h	/^  struct isp_l* pntr;$/;"	m	struct:isp_l	typeref:struct:isp_l::isp_l	access:public
+pntr	./include/link.h	/^  struct zsp_l* pntr;$/;"	m	struct:zsp_l	typeref:struct:zsp_l::zsp_l	access:public
+pntr	./include/link.h	/^ struct csp_l* pntr;$/;"	m	struct:csp_l	typeref:struct:csp_l::csp_l	access:public
+pntr	./include/link.h	/^ struct ssp_l* pntr;$/;"	m	struct:ssp_l	typeref:struct:ssp_l::ssp_l	access:public
+print_hash	./include/hash.h	/^void print_hash();$/;"	p	signature:()
+print_hash	./src/hash.c	/^void print_hash(){$/;"	f
+property	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:dmatrix	access:public
+property	./include/INSERTING.h	/^  int property,number,news;$/;"	m	struct:imatrix	access:public
+remove_hash	./include/hash.h	/^void remove_hash(int* ierr);$/;"	p	signature:(int* ierr)
+remove_hash	./src/hash.c	/^void remove_hash(int* ierr)$/;"	f	signature:(int* ierr)
+row_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon5	access:public
+row_block_ind	./include/INSERTING.h	/^  int row_block_ind,col_block_ind;$/;"	m	struct:__anon9	access:public
+row_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon4	access:public
+row_ind	./include/INSERTING.h	/^  int row_ind,col_ind;$/;"	m	struct:__anon8	access:public
+row_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon10	access:public
+row_vblock_ind	./include/INSERTING.h	/^  int row_vblock_ind,col_vblock_ind;$/;"	m	struct:__anon6	access:public
+sA_row_col	./include/conv/conv_tools.h	/^int sA_row_col();$/;"	p	signature:()
+sAb_row_col	./include/conv/conv_tools.h	/^int sAb_row_col();$/;"	p	signature:()
+sb_up_order	./include/conv/conv_tools.h	/^void sb_up_order();$/;"	p	signature:()
+sdetect_bdiag	./include/conv/conv_tools.h	/^void sdetect_bdiag();$/;"	p	signature:()
+sdetect_diag	./include/conv/conv_tools.h	/^void sdetect_diag();$/;"	p	signature:()
+set_descra	./include/properties.h	/^void set_descra(char* descra, int prpty,int *ierr);$/;"	p	signature:(char* descra, int prpty,int *ierr)
+set_descra	./src/properties.c	/^void set_descra(char* descra, int prpty,int *ierr)$/;"	f	signature:(char* descra, int prpty,int *ierr)
+set_infoa	./include/properties.h	/^void set_infoa(int* infoa, char descr,int val,int *ierr);$/;"	p	signature:(int* infoa, char descr,int val,int *ierr)
+set_infoa	./src/properties.c	/^void set_infoa(int* infoa, char descr,int val,int *ierr)$/;"	f	signature:(int* infoa, char descr,int val,int *ierr)
+setup_hash	./include/hash.h	/^void setup_hash(int n,int* ierr);$/;"	p	signature:(int n,int* ierr)
+setup_hash	./src/hash.c	/^void setup_hash(int n,int* ierr){$/;"	f	signature:(int n,int* ierr)
+slsbv_bco	./src/sbv/lsbv_bco.c	/^      void slsbv_bco (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+slsbv_bsc	./src/sbv/lsbv_bsc.c	/^      void slsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+slsbv_bsr	./src/sbv/lsbv_bsr.c	/^      void slsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+slsbv_coo	./src/sbv/lsbv_coo.c	/^      void slsbv_coo (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+slsbv_csc	./src/sbv/lsbv_csc.c	/^      void slsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+slsbv_csr	./src/sbv/lsbv_csr.c	/^      void slsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+slsbv_vbr	./src/sbv/lsbv_vbr.c	/^      void slsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+spblas_c_blas_sparse_namedconstants_h	./include/blas_sparse_namedconstants.h	10;"	d
+spblas_c_link_h	./include/link.h	2;"	d
+spblas_c_types_h	./include/types.h	2;"	d
+spre_usconv_bco2bdi	./include/conv/conv_tools.h	/^void spre_usconv_bco2bdi (int mb,int kb,int lb,float** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG);$/;"	p	signature:(int mb,int kb,int lb,float** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG)
+spre_usconv_bco2bsc	./include/conv/conv_tools.h	/^void  spre_usconv_bco2bsc (float* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(float* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE)
+spre_usconv_bco2bsr	./include/conv/conv_tools.h	/^void spre_usconv_bco2bsr (float* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(float* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE)
+spre_usconv_bdi2bco	./include/conv/conv_tools.h	/^void spre_usconv_bdi2bco (float** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb);$/;"	p	signature:(float** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb)
+spre_usconv_coo2csc	./include/conv/conv_tools.h	/^void spre_usconv_coo2csc (float* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE);$/;"	p	signature:(float* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE)
+spre_usconv_coo2dia	./include/conv/conv_tools.h	/^void spre_usconv_coo2dia  (int m,int n,float** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG);$/;"	p	signature:(int m,int n,float** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG)
+spre_usconv_dia2coo	./include/conv/conv_tools.h	/^void spre_usconv_dia2coo (float** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m);$/;"	p	signature:(float** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m)
+srsbv_bsc	./src/sbv/rsbv_bsc.c	/^      void srsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+srsbv_bsr	./src/sbv/rsbv_bsr.c	/^      void srsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+srsbv_csc	./src/sbv/rsbv_csc.c	/^      void srsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+srsbv_csr	./src/sbv/rsbv_csr.c	/^      void srsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+srsbv_vbr	./src/sbv/rsbv_vbr.c	/^      void srsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+ssp_l	./include/link.h	/^typedef struct ssp_l$/;"	s
+ssp_l::contents	./include/link.h	/^  SSPMAT contents;$/;"	m	struct:ssp_l	access:public
+ssp_l::number	./include/link.h	/^  int number;$/;"	m	struct:ssp_l	access:public
+ssp_l::pntr	./include/link.h	/^ struct ssp_l* pntr;$/;"	m	struct:ssp_l	typeref:struct:ssp_l::ssp_l	access:public
+ssp_linknode	./include/link.h	/^}ssp_linknode;$/;"	t	typeref:struct:ssp_l
+store_format	./include/blas_enum.h	/^typedef enum store_format$/;"	g
+sub_cols	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+sub_cols	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+sub_rows	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+sub_rows	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+trans_type	./include/blas_enum.h	/^typedef enum trans_type$/;"	g
+trb	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+trb	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+tre	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:dmatrix	access:public
+tre	./include/INSERTING.h	/^  int *sub_rows,*sub_cols,*trb,*tre;$/;"	m	struct:imatrix	access:public
+type_01	./include/blas_enum.h	/^  type_01,$/;"	e	enum:order_type
+type_02	./include/blas_enum.h	/^  type_02$/;"	e	enum:order_type
+up_order	./src/conv/conv_tools.c	/^void up_order(int *INDX,int n_INDX,int *RES_INDX)$/;"	f	signature:(int *INDX,int n_INDX,int *RES_INDX)
+usconv_bco2bdi	./include/conv/usconv.h	/^void usconv_bco2bdi(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_bco2bdi	./src/conv/usconv_bco2bdi.c	/^void usconv_bco2bdi(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_bco2bsc	./include/conv/usconv.h	/^void usconv_bco2bsc(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_bco2bsc	./src/conv/usconv_bco2bsc.c	/^void usconv_bco2bsc(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_bco2bsr	./include/conv/usconv.h	/^void usconv_bco2bsr(void* spmat,int *ierr);$/;"	p	signature:(void* spmat,int *ierr)
+usconv_bco2bsr	./src/conv/usconv_bco2bsr.c	/^void usconv_bco2bsr(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_bdi2bco	./include/conv/usconv.h	/^void usconv_bdi2bco(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_bdi2bco	./src/conv/usconv_bdi2bco.c	/^void usconv_bdi2bco(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_bsc2bco	./include/conv/usconv.h	/^void usconv_bsc2bco(void* spmat,int *ierr);$/;"	p	signature:(void* spmat,int *ierr)
+usconv_bsc2bco	./src/conv/usconv_bsc2bco.c	/^void usconv_bsc2bco(void* spmat,int *ierr)$/;"	f	signature:(void* spmat,int *ierr)
+usconv_bsr2bco	./include/conv/usconv.h	/^void usconv_bsr2bco(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_bsr2bco	./src/conv/usconv_bsr2bco.c	/^void usconv_bsr2bco(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_coo2csc	./include/conv/usconv.h	/^void usconv_coo2csc(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_coo2csc	./src/conv/usconv_coo2csc.c	/^void usconv_coo2csc(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_coo2csr	./include/conv/usconv.h	/^void usconv_coo2csr(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_coo2csr	./src/conv/usconv_coo2csr.c	/^void usconv_coo2csr(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_coo2dia	./include/conv/usconv.h	/^void usconv_coo2dia(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_coo2dia	./src/conv/usconv_coo2dia.c	/^void usconv_coo2dia(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_csc2coo	./include/conv/usconv.h	/^void usconv_csc2coo(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_csc2coo	./src/conv/usconv_csc2coo.c	/^void usconv_csc2coo(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_csr2coo	./include/conv/usconv.h	/^void usconv_csr2coo(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_csr2coo	./src/conv/usconv_csr2coo.c	/^void usconv_csr2coo(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+usconv_dia2coo	./include/conv/usconv.h	/^void usconv_dia2coo(void* spmat,int* ierr);$/;"	p	signature:(void* spmat,int* ierr)
+usconv_dia2coo	./src/conv/usconv_dia2coo.c	/^void usconv_dia2coo(void* spmat,int* ierr)$/;"	f	signature:(void* spmat,int* ierr)
+uscr_end	./src/uscr_end.c	/^uscr_end(INOUT int *a, INOUT int *istat)$/;"	f	signature:(INOUT int *a, INOUT int *istat)
+ussp	./src/ussp.c	/^int ussp(INOUT int *a, IN int m, OUT int *istat)$/;"	f	signature:(INOUT int *a, IN int m, OUT int *istat)
+val_pos	./include/hash.h	/^  int jndx,val_pos;$/;"	m	struct:__anon2	access:public
+value	./include/INSERTING.h	/^  double value;$/;"	m	struct:__anon8	access:public
+value	./include/INSERTING.h	/^  double** value;$/;"	m	struct:__anon10	access:public
+value	./include/INSERTING.h	/^  double** value;$/;"	m	struct:__anon9	access:public
+value	./include/INSERTING.h	/^  int value;$/;"	m	struct:__anon4	access:public
+value	./include/INSERTING.h	/^  int** value;$/;"	m	struct:__anon5	access:public
+value	./include/INSERTING.h	/^  int** value;$/;"	m	struct:__anon6	access:public
+vblin	./include/INSERTING.h	/^  d_invblock vblin;$/;"	m	struct:__anon11	access:public
+vblin	./include/INSERTING.h	/^  i_invblock vblin;$/;"	m	struct:__anon7	access:public
+x	./include/types.h	/^    double x;$/;"	m	struct:__anon13	access:public
+x	./include/types.h	/^    float x;$/;"	m	struct:__anon12	access:public
+y	./include/types.h	/^    double y;$/;"	m	struct:__anon13	access:public
+y	./include/types.h	/^    float y;$/;"	m	struct:__anon12	access:public
+zA_row_col	./include/conv/conv_tools.h	/^int zA_row_col();$/;"	p	signature:()
+zAb_row_col	./include/conv/conv_tools.h	/^int zAb_row_col();$/;"	p	signature:()
+zb_up_order	./include/conv/conv_tools.h	/^void zb_up_order();$/;"	p	signature:()
+zdetect_bdiag	./include/conv/conv_tools.h	/^void zdetect_bdiag();$/;"	p	signature:()
+zdetect_diag	./include/conv/conv_tools.h	/^void zdetect_diag();$/;"	p	signature:()
+zlsbv_bco	./src/sbv/lsbv_bco.c	/^      void zlsbv_bco (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zlsbv_bsc	./src/sbv/lsbv_bsc.c	/^      void zlsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zlsbv_bsr	./src/sbv/lsbv_bsr.c	/^      void zlsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zlsbv_coo	./src/sbv/lsbv_coo.c	/^      void zlsbv_coo (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zlsbv_csc	./src/sbv/lsbv_csc.c	/^      void zlsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zlsbv_csr	./src/sbv/lsbv_csr.c	/^      void zlsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zlsbv_vbr	./src/sbv/lsbv_vbr.c	/^      void zlsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zpre_usconv_bco2bdi	./include/conv/conv_tools.h	/^void zpre_usconv_bco2bdi (int mb,int kb,int lb,complex_d** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG);$/;"	p	signature:(int mb,int kb,int lb,complex_d** VAL,int** BINDX,int n_BINDX,int* BJNDX,int *BLDA,int *BNDIAG)
+zpre_usconv_bco2bsc	./include/conv/conv_tools.h	/^void  zpre_usconv_bco2bsc (complex_d* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(complex_d* VAL,int n_VAL,int* BINDX,int* BJNDX,int n_BJNDX,int KB,int LB,int* BPNTRB,int* BPNTRE)
+zpre_usconv_bco2bsr	./include/conv/conv_tools.h	/^void zpre_usconv_bco2bsr (complex_d* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE);$/;"	p	signature:(complex_d* VAL,int n_VAL,int* BINDX,int n_BINDX,int* BJNDX,int MB,int LB,int* BPNTRB,int* BPNTRE)
+zpre_usconv_bdi2bco	./include/conv/conv_tools.h	/^void zpre_usconv_bdi2bco (complex_d** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb);$/;"	p	signature:(complex_d** VAL_DIA,int n_VAL_DIA,int** BIDIAG,int n_BIDIAG,int** IA2,int BLDA,int* BNNZ,int lb)
+zpre_usconv_coo2csc	./include/conv/conv_tools.h	/^void zpre_usconv_coo2csc (complex_d* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE);$/;"	p	signature:(complex_d* VAL,int* INDX,int* JNDX,int n_JNDX,int K,int* PNTRB,int* PNTRE)
+zpre_usconv_coo2csr	./include/conv/conv_tools.h	/^void zpre_usconv_coo2csr (complex_d* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE);$/;"	p	signature:(complex_d* VAL,int* INDX,int n_INDX,int* JNDX,int M,int* PNTRB,int* PNTRE)
+zpre_usconv_coo2dia	./include/conv/conv_tools.h	/^void zpre_usconv_coo2dia  (int m,int n,complex_d** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG);$/;"	p	signature:(int m,int n,complex_d** VAL,int n_VAL,int** INDX,int* JNDX,int* LDA,int* NDIAG)
+zpre_usconv_dia2coo	./include/conv/conv_tools.h	/^void zpre_usconv_dia2coo (complex_d** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m);$/;"	p	signature:(complex_d** VAL_DIA,int** IDIAG,int n_IDIAG ,int** IA2,int LDA,int NNZ,int m)
+zrsbv_bsc	./src/sbv/rsbv_bsc.c	/^      void zrsbv_bsc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zrsbv_bsr	./src/sbv/rsbv_bsr.c	/^      void zrsbv_bsr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zrsbv_csc	./src/sbv/rsbv_csc.c	/^      void zrsbv_csc (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zrsbv_csr	./src/sbv/rsbv_csr.c	/^      void zrsbv_csr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zrsbv_vbr	./src/sbv/rsbv_vbr.c	/^      void zrsbv_vbr (ISPMAT* mat,int* x,int n_x,int* ierr)$/;"	f	signature:(ISPMAT* mat,int* x,int n_x,int* ierr)
+zsp_l	./include/link.h	/^typedef struct zsp_l$/;"	s
+zsp_l::contents	./include/link.h	/^  ZSPMAT contents;$/;"	m	struct:zsp_l	access:public
+zsp_l::number	./include/link.h	/^  int number;$/;"	m	struct:zsp_l	access:public
+zsp_l::pntr	./include/link.h	/^  struct zsp_l* pntr;$/;"	m	struct:zsp_l	typeref:struct:zsp_l::zsp_l	access:public
+zsp_linknode	./include/link.h	/^}zsp_linknode;$/;"	t	typeref:struct:zsp_l
